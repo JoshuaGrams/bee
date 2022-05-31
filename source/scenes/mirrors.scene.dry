@@ -120,7 +120,7 @@ Manie's watching for your expression in the mirror. She squeezes your shoulder. 
 - @narrow-cut: Ask her just to trim the ends, the way Mother does.
  
 
-@go-ahead 
+@go-ahead
 on-arrival: hairdresser = 2
 
 You nod once. Manie takes you to have your hair shampooed in a deep black sink, and then she snips, and then she blow-dries. She sprays your hair with a mist that smells like watermelons, and another one that smells like strawberries. When she is done, the worldly little woman is back in full force. Manie gives you a second mirror so that you can observe the back of your own head.
@@ -128,7 +128,7 @@ You nod once. Manie takes you to have your hair shampooed in a deep black sink, 
 - @paying: Wait for Mrs. Barron to be done and pay.
 
 
-@narrow-cut 
+@narrow-cut
 on-arrival: hairdresser = 45
 
 Afterward you look almost the same, though your hair *is* glossier, and the shampooing and blow-drying takes a long time. The smell of salon lingers in your hair afterward.

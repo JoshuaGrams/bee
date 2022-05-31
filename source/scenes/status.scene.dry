@@ -1,17 +1,21 @@
-title: Qualities
+title: Status
+new-page: true
 is-special: true
 
-# TODO: write in the qualities.
-
 Month: [? if month = 1 or month = 2 : July ?][? if month = 3 or month = 4 : August ?][? if month = 5 or month = 6 : September ?][? if month = 7 or month = 8 : October ?][? if month = 9 or month = 10 : November ?][? if month = 11 or month = 12 : December ?][? if month = 13 or month = 14 : January ?][? if month = 15 or month = 16 : February ?][? if month = 17 or month = 18 : March ?][? if month = 19 or month = 20 : April ?][? if month = 21 or month = 22 : May ?][? if month = 23 or month = 24 : June ?][? if month = 25 : Second Place ?][? if month = 26 : In Public School ?][? if month = 27 : In the World ?][? if month = 28 : Facing Off With Perrys ?][? if month = 29 : Mom Back At Work ?][? if month = 30 : The Far Side of Childhood ?][? if month = 31 : Freedom's Face ?][? if month = 32 : Under the Rock ?]
+# *What month is it, anyway? Certain activities are only possible in specific months.*
 
 [? if lettice > 0 : Lettice: [? if lettice = 1 : Mildly annoying ?][? if lettice = 2 : Annoying ?][? if lettice = 3 : Very annoying ?][? if lettice = 4 : Frustrating ?][? if lettice = 5 : Deeply frustrating ?][? if lettice = 6 : Frustrating on purpose ?][? if lettice = 7 : Problem sibling ?][? if lettice = 8 : Dysfunctional ?][? if lettice = 9 : Terror ?][? if lettice = 10 : Unholy terror ?][? if lettice > 10 : Dead to you ?] ?]
+# *Disagreements with Lettice are becoming a menace.*
 
 [? if parents > 0 : Parents: [? if parents = 1 : Mildly annoying ?] [? if parents = 2 : Annoying ?][? if parents = 3 : Very annoying ?][? if parents = 4 : Frustrating ?][? if parents = 5 or parents = 6 : Deeply frustrating ?] [? if parents = 7 or parents = 8 : Autocratic ?][? if parents = 9 or parents = 10 : Tyrannical ?][? if parents > 10 : Tyrannical beyond reason ?]?]
+# *How much is your parents' dominance becoming problematic and causing you discomfort.*
 
 Spelling: [? if spelling = 0 : Untrained ?][? if spelling > 0 and spelling <= 2 : Minor ?][? if spelling > 2 and spelling <= 6 : Modest ?][? if spelling > 6 and spelling <= 10 : Rather good ?][? if spelling > 10 and spelling <= 20 : Good ?][? if spelling > 20 and spelling <= 35 : Very good ?][? if spelling > 35 : Elite ?]
+# How much time and work you've put into your spelling memorization recently.
 
 [? if highest-win > 0 : Rank: [? if highest-win = 0 : Nothing ?][? if highest-win = 1 : Local Champion ?][? if highest-win = 2 : District Champion ?][? if highest-win = 3 : Regional Champion ?][? if highest-win = 4 : Placed Second at Nationals ?] ?]
+# *How good a competition have you won to date?*
 
 # Age: [+ age +]
 
