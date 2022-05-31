@@ -1,0 +1,39 @@
+title: Epilogue
+new-page: true
+frequency: 1000
+priority: 1
+view-if: month = 27 and epilogued = 0
+on-arrival: epilogued = 1
+tags: top
+subtitle: Being Cain.
+
+= Epilogue
+
+You could accept -- maybe -- the coming in second place. Maybe it just means that you're not good enough. The way Cain's sacrifice just wasn't as good as Abel's, and he should have made peace with the fact, rather than striking his brother down.
+
+But then you hear Mother at church _bragging_ to folk about how you came in second at National, and something slips.
+
+- @what-about:  What about how your striving for perfection was your gift to God?
+- @what-about1:  What about the importance of fulfilling your vocation?
+- @what-about2:  What about how you were going to win in the name of all home-schoolers?
+- @what-about3:  How can second place possibly be acceptable to them?
+
+@what-about1
+go-to: what-about
+
+@what-about2
+go-to: what-about
+
+@what-about3
+go-to: what-about
+
+@what-about
+
+That's why you leave. That's why you walk out of the church building before Sunday School starts and no one knows to look for you until a couple of hours have gone by. 
+
+That's why you sit on a park bench all alone.
+
+Sometime soon you are going to have to make up your mind whether to go home again. If it's okay to fail there, then what's the point? 
+
+
+

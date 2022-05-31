@@ -1,0 +1,160 @@
+title: Year-end Competition
+frequency: 1000
+new-page: true
+priority: 3
+view-if: age = 9 and month = 24
+on-arrival: month = 0; age += 1
+tags: competition, top
+subtitle: A possibly district-level testing of your mettle. (Note: not METAL.)
+
+= Year-end Competition
+
+It's time for the competition again. Mother packs up her sewing necessities. Lettice fills her backpack with art supplies and a couple of textbook readings. Father cooks bacon for breakfast and kisses you goodbye.
+
+- @lets-go: Let's go.
+- @go-2: Let's go.
+
+@lets-go
+view-if: highest-win = 0
+
+To start, you're back at the local school. Just like last year; only, with luck, this time it will go better.
+
+The first round you're in, you have to spell
+
+- @chochke: CHOCHKE
+- @tchotchke: TCHOTCHKE
+- @chochkie: CHOCHKIE
+- @tchotschkie: TCHOTSCHKIE
+
+
+@tchotchke
+on-arrival: highest-win = 1
+go-to: district
+
+"TCHOTCHKE."
+
+It's enough; it wins. 
+
+"Remember," says Mother in the car on the way home. "This is just the first step of a much longer road."
+
+
+@chochkie
+choose-if: spelling < 8
+on-arrival: parents += 1
+unavailable-subtitle: It looks suspiciously similar to Wookie.
+
+"CHOCHKIE."
+
+The bell rings almost before you're done speaking. You take your seat. 
+
+"You're home early," Father remarks when you get in.
+
+Mother goes to the back room without saying anything beyond, "Waste of time." Thick silence prevails in the house.
+
+
+@tchotschkie
+choose-if: spelling < 13
+unavailable-subtitle: Surely you'd remember if there were five consonants in a row.
+
+"TCHOTZSCHKIE."
+
+You get dinged, of course. You were wrong, and then you didn't even manage to do the wrong spelling right, sticking in that spare Z like that for no reason. 
+
+You sulk in the car and Mother seems to have the sense not to offer any consolation.
+
+That night Lettice draws you a picture. It shows Little Red Riding Hood lost in the woods. Consonants with teeth peer out from behind every tree.
+
+
+@chochke
+choose-if: spelling < 10 
+on-arrival: parents += 1; status += 1
+unavailable-subtitle: There are almost certainly Ts in this word.
+
+"CHOCHKE."
+
+Ah. No. The bell rings. 
+
+There are looks of compassion from a couple of the other kids, but this is not very soothing.
+
+"I had hoped," says Father over dinner, "that we'd have an opportunity to put a little congratulatory notice to you in our newsletter this month."
+
+
+
+@go-2
+view-if: highest-win > 0
+go-to: district
+
+The local competition feels much easier than it was last year. Either that, or you're just more familiar with the routine and the location and the stale hot dog smell in the school cafeteria.
+
+In any case, hardly anyone poses a serious challenge for you.
+
+@district
+go-to: challenge
+
+The district competition is decidedly more business-like. The pronouncer is a woman with narrow white-ish lips and the beginning of a mustache. She is probably self-conscious about the mustache, so you try not to notice it too much.
+
+
+@challenge
+
+- @vackero: VACKERO.
+- @vacquereau: VACQUEREAU.
+- @vaccero: VACCERO.
+- @vaquero: VAQUERO.
+- @request: Request the language of origin.
+
+
+@request
+on-arrival: isspanish = 1
+go-to: challenge
+
+When you ask for the language of origin, the pronouncer says, "The word is Spanish," in a tone that is not exactly encouraging.
+
+
+
+@vaccero
+choose-if: spelling < 17 or isspanish = 0
+on-arrival: parents += 1
+unavailable-subtitle: At a guess, the double C might be more Italian? Probably?
+
+"VACCERO."
+
+The misspelling bell dings and Mother hides her face behind her copy of Classical Education For Young Minds.
+
+Lettice is full of frolic on the way back to the car. "Way to go," she says. "I thought we were going to be in there forever. Did you misspell on purpose so I could get out? Because if so, I'm very grateful."
+
+Mother glares at Lettice. "It would be wrong for anyone to _throw_ the game," she says. "Remember that that would have been the _wrong thing_ for Akeelah to do." Your family has been through many, many viewings of "Akeelah and the Bee." Mother uses it for teaching moments.
+
+
+@vacquereau
+choose-if: isspanish = 0 
+on-arrival: status += 1
+unavailable-subtitle: It would only be spelled that way if it were French.
+
+"VACQUEREAU."
+
+The bell dings,  but Mother is actually sympathetic in the car. 
+
+"I would have guessed it was French too," she says. "Maybe you should have asked for a language of origin. But it sounded very likely, didn't it?"
+
+She makes chicken fingers for lunch amid a general air of forgiveness.
+
+@vaquero
+on-arrival: highest-win = 2
+
+"VAQUERO."
+
+This turns out to be the right answer; the winning answer. Mother takes you home in glory. There is home-made cake, and a trophy of a little boy holding a dictionary. 
+
+Lettice draws you a picture of a cowboy, though only after she has looked up "vaquero" online.
+
+
+@vackero
+choose-if: spelling < 15 
+on-arrival: parents += 2
+unavailable-subtitle: That doesn't really look right, does it?
+
+"VACKERO," you say firmly.
+
+This turns out to be wrong. The pronouncer spells the correct version for you, but your cheeks are burning too much for you to really take it in.
+
+

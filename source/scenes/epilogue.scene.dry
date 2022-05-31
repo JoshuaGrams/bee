@@ -1,25 +1,53 @@
 title: Epilogue
-subtitle: Down the corridor of years.
-new-page: yes
-tags: top
-view-if: month = 26
+new-page: true
+frequency: 1000
+priority: 1
+view-if: month = 29 and epilogued = 0
 on-arrival: epilogued = 1
+tags: top
+subtitle: Down the corridor of years.
 
 = Epilogue
 
-So you go to public school, and you don't go to Nationals.
+It doesn't last more than a few months. Soon Mother has to admit that she can't really school you and temp at the same time. 
 
-Language arts classes are never up to your level. Listening to other kids read aloud badly is a special kind of pain. 
+She complains about temping a great deal, but she sounds a little bit excited when she gets a multi-week assignment. She talks about the boss and the snarky secretary, and she's happy talking about them. What she hasn't done is grade your math homework.
 
-Science class is more interesting than you expected, and you get to cut up a frog.
+So you and Lettice must choose what to do next.
 
-Lettice stays home and works with Mother. She gets her own art tutor. She does illustrations for different story books she reads. Suddenly she's the talented one. She hardly remembers to hate you at all.
+- @go-back: Go to public school.
+- @ask-to: Ask to be taught alongside Jerome and Flauberta.
 
-It hurts for a while, and then it stops hurting. And one day Mother and Father say you've come a long way and you don't have to stay in public school if you don't want to.
+@go-back
 
-- @and-choose: And you're allowed to choose for yourself.
+It is not much of a choice after all. And it is lonely there. You and Lettice have to go to different schools because you're the wrong ages to be in the same place. 
+
+Language arts classes are always horrid. You miss your spelling, but there isn't as much time to prepare any more, and no one at school really seems interested in your going to the Bee anyhow.
+
+Science class is good. You get to cut up a frog. 
+
+And you still have your words, words that come to you now and then, words that you don't say aloud to anyone. PERSPICACIOUS. ANAEROBIC. ENNUI. 
+
+Shabby beige corridors and flickering lights are not the beginning and end of the world.
 
 
-@and-choose
+@ask-to
+view-if: child-led > 0
+choose-if: jerome > 5 
+unavailable-subtitle: That would definitely be too strange.
 
-So you decide for yourself.
+"Could we be... sort of... fostered by Jerome's family?" you suggest. "You'd still officially be our teachers, but we could spend our days over there with them."
+
+Mother and Father talk about it in the bedroom with the door shut. Then they invite Jerome's parents over and ask, again while you and Lettice are not allowed in the room even though it is your idea.
+
+- @after: The school year after that is one of the best you can remember.
+
+@after
+
+You get dropped off at Jerome and Flauberta's every morning. You write down ideas you want to explore and put them on the big project board. Jerome's mother comes out in her yoga pants and sits on the sofa and talks you through the projects you want to work on today or this week, and how you're going to assess and tackle them. 
+
+You do research on a tablet computer and write down ideas in a fancy notebook.
+
+After lunch, there is time for your drill work, while Flauberta practices the flute. Jerome does headstands because he read a website about calisthenics. Lettice makes a butcher-paper mural big enough to stretch around the whole room.
+
+

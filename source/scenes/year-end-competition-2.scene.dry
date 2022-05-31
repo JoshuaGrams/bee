@@ -1,0 +1,315 @@
+title: Year-end Competition
+new-page: true
+frequency: 1000
+priority: 3
+view-if: highest-win < 4 and age > 9 and month = 24
+tags: competition, top
+subtitle: It's that time of year again.
+
+= Year-end Competition
+
+It's time for the competition again. Mother packs up her sewing necessities. Lettice whines about having to come along, but eventually gets her sketchbooks together. Father cooks bacon and pancakes with maple syrup, and kisses you goodbye.
+
+- @lets-go: Let's go.
+- @go-2: Let's go.
+- @go-3: Let's go.
+- @go-4: Let's go.
+
+
+@toppeng
+choose-if: spelling < 25
+on-arrival: age += 1; month = 1
+unavailable-subtitle: That doesn't seem right.
+
+"TOPPENG."
+
+You have, it turns out, one P too many. 
+
+"It seemed about right," says Mother in the car. "I suppose Indonesian loan words didn't come up on your study lists. I know _I_'ve never heard of it before."
+
+
+@win
+on-arrival: highest-win = 4
+
+There. Yes. That was right.
+
+And then the next kid gets his word right too. It's not over here.
+
+The kids around you are your age or even younger. They all have their quirks -- their nail-biting and their last-minute flash-cards, their stage mothers and their specialty protein bar snacks -- but they have been doing what you've been doing, just as much or even more, living a life of words and letters. 
+
+A life where nothing is written that they don't memorize.
+
+- @shadow:  And you don't know this word.
+
+
+@national
+go-to: national-challenge
+
+Nationals! You and Mother receive airline tickets. Father is too busy at work to go, so despite your expectations, it's Mother who shows you around. Before you appear on stage, you get to sight-see: the Capitol building, the White House. The Mall. The Smithsonian building. And not just the Air and Space museum, but the other buildings of the Smithsonian, including the American History museum with George Washington in a toga.
+
+And then it's time for your debut on stage. And you get through the written exam and the semi-finals and in the finals it's down to
+
+
+@narsussistic
+choose-if: spelling < 12
+on-arrival: age += 1; month = 1; status += 1; parents += 1
+unavailable-subtitle: That just looks wrong.
+
+"NARSUSSISTIC."
+
+The bell rings almost before you're done speaking. You take your seat. 
+
+"Yes," hisses Mother into your ear. "From the well-known cartoon character Narsuss."
+
+You look at her blankly.
+
+"We _had_ this in your mythology reading!" she says. "Honestly, I don't know why we bother if you're not going to pay attention. I bet Mrs. Perry will have noticed that, too."
+
+
+@the-end
+on-arrival: month = 27
+
+You ding out and someone else wins the top place and the $30,000. And after that the world is sort of on mute, quiet, hard to see and hear. You get some accolades as the second-place winner, but they are far away, dim. 
+
+
+
+@narsissistic
+choose-if: spelling < 15
+on-arrival: parents += 1; status += 1; month += 1; age += 1
+unavailable-subtitle: No, it definitely starts with NARC-.
+
+"NARSISSISTIC."
+
+Ah. No. The bell rings. 
+
+There are looks of compassion from a couple of the other kids, but this is not very soothing.
+
+"I had hoped," says Father over dinner, "that we'd have an opportunity to put a little congratulatory notice to you in our newsletter this month."
+
+
+@x3
+on-arrival: highest-win = 3
+go-to: national
+
+yes there it is. In something like a fugue state, you have won regional. It doesn't feel right, does it? But you've won, you're going on
+
+
+@narcissistic
+on-arrival: highest-win = 1
+go-to: district
+
+"NARCISSISTIC." Like the flowers, narcissus. Like the beautiful boy loved by Echo. Like a forest pool.
+
+"Don't let it go to your head," warns Father when you get home. "You're signed up for district, and regional if you get past that."
+
+
+@district
+go-to: challenge
+
+The district competition is tricky and the pronouncer is a woman with a little bit of a mustache.
+
+
+@lose-2
+choose-if: spelling < 45
+on-arrival: age += 1; month = 1
+unavailable-subtitle: That doesn't seem right either.
+
+"PUZTA."
+
+No. You're missing one copy of the letter S. Pity.
+
+
+@toping
+choose-if: topeng-defined < 1 or spelling < 17
+on-arrival: parents += 1; status += 1; month = 1; age += 1
+unavailable-subtitle: TOPING is to do with drinking, not dance dramas.
+
+"TOPING."
+
+The misspelling bell dings. Mother looks harassed. "Did you," she asks awfully, "have to pick a word for imbibing alcohol? I am fairly certain our friends will find matter for comment in that."
+
+
+@lose-1
+choose-if: spelling < 40 
+on-arrival: month = 1; age += 1
+unavailable-subtitle: No, you don't think so.
+
+"PUSTA," you say firmly.
+
+This turns out to be wrong. 
+
+"I didn't even know that word," says Mother afterwards. "I've never heard of it before today. Never seen it on a list, never... yeah. Nothing. Ever."
+
+
+@national-challenge
+
+- @lose-1:  PUSTA.
+- @lose-2:  PUZTA.
+- @lose-3:  PUZSTA.
+- @win:  PUSZTA.
+- @request-n: Request the language of origin.
+
+@topeng
+on-arrival: highest-win = 2 
+
+The word swims to the surface, a dim memory from among many. Not TOPING, not TOPPING, nothing to do with PANGOLIN at all. It's like groping around in the bottom of a suitcase.
+
+"TOPENG."
+
+And that's right; it's the round. You've won district.
+
+- @regional: What a delicious celebratory cake. Coconut. Mm.
+
+
+@define
+on-arrival: topeng-defined += 1 
+go-to: challenge
+
+The pronouncer defines the word in question as a type of Indonesian dance drama, typically performed by people wearing masks.
+
+
+@topping
+choose-if: isindonesian < 1
+on-arrival: month = 1; age += 1
+unavailable-subtitle: The word TOPPING is definitely not Indonesian.
+
+"TOPPING," you say firmly.
+
+This turns out to be wrong. 
+
+"What were you thinking of?" demands Mother in the car. "_Dessert toppings_?"
+
+But on pressure she admits she doesn't know the word it was supposed to be, either. So there.
+
+
+@regional
+go-to: regional-challenge
+
+The competitors at regional don't talk to each other so much, and have a kind of ferocious determination about them. And then. The stage. It's... your word is...
+
+Yes. Your mind has gone blanker than a blank sheet.
+
+
+@narcessistic
+choose-if: spelling < 21
+on-arrival: month = 1; age += 1
+unavailable-subtitle: Like necessity? But no, that's not the same root at all.
+
+"NARCESSISTIC."
+
+You get dinged.
+
+"That felt really close," you say, getting into the car. Mother gives you a tiny shrug. Another year that you're not going anywhere near Nationals. Not even as far as district.
+
+
+@x2
+choose-if: spelling < 35
+on-arrival: age += 1; month = 1
+unavailable-subtitle: ...No.
+
+The pronouncer seems to take a certain amount of active pleasure in dinging you out on that one. And why? And for what?
+
+But then, it was just a word that you didn't recognize, not at all. And no amount of definition and use in a sentence and etymology made it any more familiar.
+
+
+@go-4
+view-if: highest-win = 3
+go-to: national-challenge
+
+The round of Bees is the same as usual, and you find yourself back at Nationals. Taking the written exam. Drinking soda from the vending machine at the hotel. Looking around Washington, D.C. with an air of worldly knowledge. Sliding through semi-finals despite a bad moment or two.
+
+And then back on stage again.
+
+
+@shadow
+
+You can't envision it, you can't imagine how it's spelled on the page. You're going to lose because sometime, somewhere along the line, you didn't include whatever-it-is in your training program. Or you learned it and forgot it -- though it sounds like something you've never even seen before.
+
+- @pray-more: Pray for guidance.
+
+@x1
+choose-if: spelling < 30
+on-arrival: month = 1; age += 1
+unavailable-subtitle: ...Probably not. Almost certainly not.
+
+Ding. Ding ding. Ding. You got it wrong. Whatever it was. There's a sort of dizzying buzzing about your head. What was that word?
+
+
+@go-3
+view-if: highest-win = 2
+go-to: regional
+
+You move through the local and district competitions with the ease of practice. The other students recognize you. "Repeat winner," one of the boys explains to his mother. The pronouncer at district is the same woman as last year. She still has a little mustache. It has if anything grown darker.
+
+
+@go-2
+view-if: highest-win = 1
+go-to: district
+
+You've got the hang of the local competition now. It gives you hardly any trouble at all.
+
+
+@request-n
+on-arrival: ishungarian += 1
+go-to: national-challenge
+
+The pronouncer states that the source language is Hungarian.
+
+
+@challenge
+
+- @topeng:  TOPENG.
+- @toppeng:  TOPPENG.
+- @topping:  TOPPING.
+- @toping:  TOPING.
+- @request: Request the language of origin.
+- @define: Request a definition.
+
+@request
+on-arrival: isindonesian += 1
+go-to: challenge
+
+"Indonesian," replies the pronouncer. She's giving you a sort of steely smile as though to say that she knows that isn't much help.
+
+
+@regional-challenge
+
+Blanker than a snow storm.
+
+Did you even hear that? Understand it? It's all static up in there
+
+
+- @x1:  ???
+- @x2:  ????
+- @x3:  ?????
+
+@pray-more
+go-to: the-end
+
+You squeeze your eyes shut and try to bargain. You've given your best to this vocation of yours. All you had to give, at any rate. Maybe the final step has to be grace?
+
+But nothing happens. It doesn't come to you. You can ask for origin language, pronunciation again, use in a sentence, but that word isn't coming.
+
+
+@lets-go
+view-if: highest-win = 0
+
+To start, you're back at the local school. It's a little embarrassing that you've never gotten past this level, but if you're lucky, maybe this year you'll get further.
+
+To avoid getting out, you must spell
+
+- @narsissistic: NARSISSISTIC
+- @narsussistic: NARSUSSISTIC
+- @narcissistic: NARCISSISTIC
+- @narcessistic: NARCESSISTIC
+
+@lose-3
+choose-if: spelling < 50 
+on-arrival: month = 1; age += 1
+unavailable-subtitle: Or that.
+
+"PUZSTA."
+
+It turns out you have the Z and the S backwards. That's it. That's all. The other way around and you could have been the national spelling champion of the entire United States, with $30,000 in prize money and newspaper articles written about you. But you didn't.
+
+
