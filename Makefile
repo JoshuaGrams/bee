@@ -3,5 +3,8 @@ all:
 	cp out/html/* ./
 	zip game.zip *.js *.html *.css
 	html-inline index.html > bee.html
-#deploy:
-	#butler push game.zip red-autumn/pageant:win-mac-linux
+deploy:
+	git checkout gh-pages
+	git add bee.html
+	git commit -m "update game file"
+	git push
