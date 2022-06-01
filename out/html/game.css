@@ -282,8 +282,9 @@ blockquote + blockquote.attribution {
   }
   #content {
       position: static;
-      font-size: 1em;
-      line-height: 150%;
+      font-size: 1.02em;
+      line-height: 160%;
+      padding: 1em 1em 1.5em 1em;
   }
   #qualities {
       font-size: 1em;
