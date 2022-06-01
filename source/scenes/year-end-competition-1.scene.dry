@@ -3,7 +3,7 @@ frequency: 1000
 new-page: true
 priority: 3
 view-if: age = 9 and month = 24
-on-arrival: month = 0; age += 1
+on-arrival: month = 1; age += 1
 tags: competition, top
 subtitle: A possibly district-level testing of your mettle. (Note: not METAL.)
 
@@ -122,7 +122,7 @@ The misspelling bell dings and Mother hides her face behind her copy of Classica
 
 Lettice is full of frolic on the way back to the car. "Way to go," she says. "I thought we were going to be in there forever. Did you misspell on purpose so I could get out? Because if so, I'm very grateful."
 
-Mother glares at Lettice. "It would be wrong for anyone to _throw_ the game," she says. "Remember that that would have been the _wrong thing_ for Akeelah to do." Your family has been through many, many viewings of "Akeelah and the Bee." Mother uses it for teaching moments.
+Mother glares at Lettice. "It would be wrong for anyone to *throw* the game," she says. "Remember that that would have been the *wrong thing* for Akeelah to do." Your family has been through many, many viewings of "Akeelah and the Bee." Mother uses it for teaching moments.
 
 
 @vacquereau

@@ -2,7 +2,7 @@ title: Epilogue
 new-page: true
 frequency: 1000
 priority: 1
-view-if: month = 30 and epilogued = 0
+view-if: month = 30
 on-arrival: epilogued = 1
 tags: top
 subtitle: The far side of childhood.
@@ -11,7 +11,7 @@ subtitle: The far side of childhood.
 
 So you go back home; but you go back home with a difference. The difference is that you can see other lives you might lead, other futures you might have. The spelling bee and the homeschooling are your right now, but they are not your eternity. When you think about the numbers, they're not very many years of your life at all. You could live to be eighty, or a hundred, or a hundred and two.  
 
-It still feels like a horribly long sentence to serve from _this_ side. But there will be a time when it doesn't. 
+It still feels like a horribly long sentence to serve from *this* side. But there will be a time when it doesn't. 
 
 Later, when you're older.
 

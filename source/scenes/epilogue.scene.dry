@@ -2,7 +2,7 @@ title: Epilogue
 new-page: true
 frequency: 1000
 priority: 1
-view-if: month = 29 and epilogued = 0
+view-if: month = 29
 on-arrival: epilogued = 1
 tags: top
 subtitle: Down the corridor of years.

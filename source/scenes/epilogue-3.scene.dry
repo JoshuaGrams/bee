@@ -2,7 +2,7 @@ title: Epilogue
 new-page: true
 frequency: 1000
 priority: 1
-view-if: month = 27 and epilogued = 0
+view-if: month = 27
 on-arrival: epilogued = 1
 tags: top
 subtitle: Being Cain.
@@ -11,7 +11,7 @@ subtitle: Being Cain.
 
 You could accept -- maybe -- the coming in second place. Maybe it just means that you're not good enough. The way Cain's sacrifice just wasn't as good as Abel's, and he should have made peace with the fact, rather than striking his brother down.
 
-But then you hear Mother at church _bragging_ to folk about how you came in second at National, and something slips.
+But then you hear Mother at church *bragging* to folk about how you came in second at National, and something slips.
 
 - @what-about:  What about how your striving for perfection was your gift to God?
 - @what-about1:  What about the importance of fulfilling your vocation?

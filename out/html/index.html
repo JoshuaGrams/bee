@@ -16,18 +16,6 @@
     <div class="background" id="bg1">
     </div>
 
-    <header>
-      <h1>Bee</h1>
-      <h2>Emily Short</h2>
-      <div id="header-links">
-        <a id="stats-link" onclick="window.showStats();" href="#">Status</a>
-      <!-- Uncomment to show the top bar. If not using stats or save files, comment out those lines.
-        <a onclick="window.showSaveSlots();" href="#">Save/Load</a>
-        <a onclick="window.showOptions();" href="#">Options</a>
-      -->
-      </div>
-    </header>
-
     <div id="options" class="overlay" style="display: none;">
         <div class="overlay_top">
             <table>
@@ -184,24 +172,44 @@
         </table>
     </div>
 
-    <!--
-    <div id='stats_sidebar' class='tools right'>
-        <div id>
+    <div id="page">
+        <header>
+          <h1>Bee</h1>
+          <h2>Emily Short</h2>
+
+
+          <div id="header-links">
+            <!--
+            <a id="stats-link" onclick="window.showStats();" href="#">Status</a>
+            -->
+          <!-- Uncomment to show the top bar. If not using stats or save files, comment out those lines.
+            <a onclick="window.showSaveSlots();" href="#">Save/Load</a>
+            <a onclick="window.showOptions();" href="#">Options</a>
+          -->
+          </div>
+        </header>
+        <div id="tools_wrapper">
+            <div id='stats_sidebar' class='tools right'>
+                <div id="qualities">
+                </div>
+            </div>
+        </div>
+        <div id="mid_panel">
+
+            <div id='content'></div>
+
+            <footer>
+              <p>
+                <a onclick="window.showSaveSlots();" href="#">Save/Load</a>
+                <a onclick="window.quickSave();" href="#">Quick Save</a>
+                <a onclick="window.quickLoad();" href="#">Quick Load</a>
+              </p>
+              <!--
+              &copy; 2021 Emily Short.
+              Made with <a href="https://github.com/aucchen/dendry">Dendry</a>.
+              -->
+            </footer>
+        </div>
     </div>
-    -->
-
-    <div id='content'></div>
-
-    <footer>
-      <p>
-        <a onclick="window.showSaveSlots();" href="#">Save/Load</a>
-        <a onclick="window.quickSave();" href="#">Quick Save</a>
-        <a onclick="window.quickLoad();" href="#">Quick Load</a>
-      </p>
-      <!--
-      &copy; 2021 Autumn Chen.
-      Made with <a href="https://github.com/aucchen/dendry">Dendry</a>.
-      -->
-    </footer>
   </body>
 </html>

@@ -2,7 +2,7 @@ title: Epilogue
 subtitle: Down the corridor of years.
 new-page: yes
 tags: top
-view-if: month = 26 and epilogued = 0
+view-if: month = 26
 on-arrival: epilogued = 1
 
 = Epilogue

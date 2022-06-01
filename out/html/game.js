@@ -204,6 +204,17 @@
   window.handleSignal = function(signal) {
   };
 
+  window.updateSidebar = function() {
+      $('#qualities').empty();
+      var scene = dendryUI.game.scenes.status;
+      var displayContent = dendryUI.dendryEngine._makeDisplayContent(scene.content, true);
+      $('#qualities').append(dendryUI.contentToHTML.convert(displayContent));
+  };
+
+  window.onDisplayContent = function() {
+      window.updateSidebar();
+  };
+
   window.dendryModifyUI = main;
   console.log("Modifying stats: see dendryUI.dendryEngine.state.qualities");
 }());
