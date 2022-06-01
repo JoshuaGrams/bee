@@ -5,6 +5,7 @@ all:
 	html-inline index.html > bee.html
 deploy:
 	git checkout gh-pages
-	git add index.html
+	mv *.js *.html *.css docs/
+	git add docs
 	git commit -m "update game file"
 	git push
