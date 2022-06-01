@@ -2,12 +2,10 @@ title: Lessons for Lettice
 subtitle: Mother asks you to take on some new responsibilities in educating Lettice.
 new-page: yes
 view-if: age > 9 and lessons < 1 and month < 24
-on-arrival: lessons += 1
+on-arrival: lessons += 1; month += 1
 tags: plot, chores, top
 
 = Lessons for Lettice
-
-on-arrival: month += 1
 
 When you are old enough, Mother asks you to take over Lettice's lessons in reading and spelling. You are certainly qualified (she says with a tiny smile) and it will bring the two of you closer together as sisters.
 
