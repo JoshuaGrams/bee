@@ -2,6 +2,7 @@ title: Year-end Competition
 subtitle: A first competition with others your own age.
 new-page: yes
 view-if: month = 24 and age = 8
+frequency: 1000
 priority: 3
 tags: competition, top
 on-arrival: month = 1; age += 1

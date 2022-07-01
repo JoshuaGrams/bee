@@ -2,6 +2,7 @@ title: Heard Rather Than Seen
 subtitle: The shadow of uncertainty.
 new-page: yes
 view-if: month < 24 and barrons > 2 and barron-crisis = 1
+frequency: 1000
 priority: 1
 on-arrival: month += 1; barron-crisis += 1
 tags: menace, plot, top

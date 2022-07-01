@@ -1,6 +1,7 @@
 title: Seeking Inspiration
 subtitle: Looking for something to recharge your will to spell.
 new-page: yes
+frequency: 1000
 tags: top
 view-if: motivation = 0 and age > 7 and month < 23
 

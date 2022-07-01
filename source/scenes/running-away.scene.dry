@@ -2,6 +2,7 @@ title: Running Away
 subtitle: You've had enough of your parents.
 new-page: yes
 view-if: parents > 9 and month < 24
+frequency: 1000
 priority: 2
 on-arrival: month = 30; parents += 1
 tags: menace, top

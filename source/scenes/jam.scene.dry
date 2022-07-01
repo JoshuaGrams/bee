@@ -2,6 +2,7 @@ title: Jam
 subtitle: Your family makes its yearly jam.
 new-page: yes
 view-if: age > 7 and month = 2
+frequency: 1000
 priority: 2
 tags: chores, seasonal, top
 on-arrival: month += 1

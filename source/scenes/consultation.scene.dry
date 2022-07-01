@@ -1,6 +1,7 @@
 title: Consultation
 subtitle: Jerome asks an opinion.
 new-page: yes
+frequency: 1000
 tags: top
 view-if: age > 7 and jerome > 1 and child-led < 2 and month < 24
 on-arrival: child-led = 2; jerome += 1

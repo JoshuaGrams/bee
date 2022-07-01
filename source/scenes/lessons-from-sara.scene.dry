@@ -1,5 +1,6 @@
 title: Lessons from Sara
 subtitle: English lessons begin.
+frequency: 1000
 new-page: yes
 view-if: english = 1 and age > 0 and month < 24
 on-arrival: english += 2; month += 1; sara += 1

@@ -2,6 +2,7 @@ title: Snow Shoveling
 subtitle: Cleaning up the walkway.
 new-page: yes
 view-if: month > 9 and month < 17 and age > 7
+frequency: 1000
 on-arrival: month += 1
 tags: chores, seasonal, top
 

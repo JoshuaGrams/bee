@@ -2,6 +2,7 @@ title: Ash Wednesday
 subtitle: Family attends services for the beginning of Lent.
 new-page: yes
 view-if: month = 16 and age > 7
+frequency: 1000
 priority: 2
 on-arrival: month += 1; 
 tags: seasonal, religious, top

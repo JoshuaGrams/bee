@@ -2,6 +2,7 @@ title: Discipline
 subtitle: Questions of "discipline."
 new-page: yes
 view-if: parents > 6 and month < 24 and age > 7
+frequency: 1000
 priority: 2
 tags: menace, top
 on-arrival: month += 1

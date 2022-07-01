@@ -1,6 +1,7 @@
 title: Lettice
 subtitle: Your sister's place.
 new-page: yes
+frequency: 1000
 view-if: age > 4 and age < 8 and let-introduced = 0
 on-arrival: age += 1; let-introduced = 1
 tags: plot, top

@@ -2,6 +2,7 @@ title: Sunday Afternoon
 subtitle: Sunday afternoon is traditionally time for playing games.
 new-page: yes
 view-if: age > 7 and month < 24
+frequency: 1000
 on-arrival: month += 1
 tags: menace, top
 

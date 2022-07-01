@@ -2,6 +2,7 @@ title: Pentecost
 subtitle: The feast of the Holy Spirit at church.
 new-page: yes
 view-if: month = 22 and age > 7
+frequency: 1000
 priority: 2
 on-arrival: month += 1
 tags: seasonal, religious, top

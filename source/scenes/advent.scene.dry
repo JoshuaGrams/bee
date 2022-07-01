@@ -2,6 +2,7 @@ title: Advent
 subtitle: The beginning of Advent.
 new-page: yes
 view-if: month = 11
+frequency: 1000
 priority: 2
 on-arrival: month += 1
 tags: seasonal, religious, top

@@ -1,6 +1,7 @@
 title: The House of Mildew
 subtitle: An introduction to another family.
 new-page: yes
+frequency: 1000
 on-arrival: month += 1; jerome = 1
 view-if: jerome = 0 and age > 7 and month < 24
 tags: plot, top

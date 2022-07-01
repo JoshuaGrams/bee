@@ -2,6 +2,7 @@ title: Minding Lettice
 subtitle: Someone has to watch her when your parents go out.
 new-page: yes
 view-if: lettice > 4 and lettice < 20 and month < 24
+frequency: 1000
 priority: 2
 on-arrival: month += 1
 tags: menace, top

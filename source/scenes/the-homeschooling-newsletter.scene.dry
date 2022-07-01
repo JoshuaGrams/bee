@@ -1,5 +1,6 @@
 title: The Homeschooling Newsletter
 subtitle: Father begins a new project, and other members of the family are invited to help out.
+frequency: 1000
 new-page: yes
 view-if: age > 7 and newslettering = 0  and month < 24
 tags: plot, top

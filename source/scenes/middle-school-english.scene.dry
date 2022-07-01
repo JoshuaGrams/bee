@@ -1,5 +1,6 @@
 title: Middle School English
 subtitle: A hired tutor for you.
+frequency: 1000
 new-page: yes
 view-if: english = 0 and age > 7 and month < 24
 on-arrival: month += 1; english += 1

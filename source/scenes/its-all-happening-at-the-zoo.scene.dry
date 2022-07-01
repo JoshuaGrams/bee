@@ -4,6 +4,7 @@ new-page: yes
 tags: top
 view-if: age > 7 and month = 7
 on-arrival: month += 1
+frequency: 1000
 priority: 2
 
 = It's All Happening At the Zoo

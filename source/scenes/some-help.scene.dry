@@ -1,6 +1,7 @@
 title: Some Help
 subtitle: Some optional guidance, if you think it might be useful.
 new-page: yes
+frequency: 1000
 view-if: age > 8 and age < 8
 priority: 2
 tags: plot, top

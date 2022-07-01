@@ -1,6 +1,7 @@
 title: Snow Day
 subtitle: How studying happens when there is snow on the ground.
 new-page: yes
+frequency: 1000
 view-if: month > 10 and month < 17 and age > 7
 on-arrival: month += 1;
 tags: seasonal, drill, top

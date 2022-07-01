@@ -2,6 +2,7 @@ title: Church Jumble Sale
 subtitle: Helping sort goods for the annual fundraiser.
 new-page: yes
 view-if: status > 1 and status < 6 and month = 14
+frequency: 1000
 on-arrival: month += 1
 tags: menace, plot, top
 

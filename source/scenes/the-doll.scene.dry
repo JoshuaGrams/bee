@@ -2,6 +2,7 @@ title: The Doll
 subtitle: No good deed goes unpunished.
 new-page: yes
 view-if: doll = 0 and lettice < 2 and age > 7 and month < 24
+frequency: 1000
 on-arrival: month += 1; doll = 1
 tags: plot, menace, one-off, top
 

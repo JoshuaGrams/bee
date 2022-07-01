@@ -1,6 +1,7 @@
 title: At the Copy Shop
 subtitle: Father's newsletter runs into certain inconveniences.
 new-page: yes
+frequency: 1000
 view-if: newslettering > 0 and newslettering < 3 and month < 24 and copy-error = 0
 tags: plot, menace, top
 on-arrival: newslettering += 1; month += 1; copy-error = 1

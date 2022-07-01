@@ -1,6 +1,7 @@
 title: Was It This Way For the Desert Fathers?
 subtitle: The private mystery of letters.
 new-page: yes
+frequency: 1000
 view-if: world > 4 and month < 24 and spelling-relief > 3 and spelling > 4
 on-arrival: month += 1
 priority: 2

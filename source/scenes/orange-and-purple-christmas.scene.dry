@@ -2,6 +2,7 @@ title: Orange and Purple Christmas
 subtitle: A Christmas of simplicity.
 new-page: yes
 view-if: poverty > 6 and month = 12
+frequency: 1000
 priority: 2 
 on-arrival: month += 1; poverty += 1
 tags: menace, top

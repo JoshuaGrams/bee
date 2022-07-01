@@ -1,6 +1,7 @@
 title: The Legend of Public School
 subtitle: Mother and Father share anecdotes about what public school used to be like.
 new-page: yes
+frequency: 1000
 view-if: age > 7 and age < 10  and month < 24
 tags: menace, top
 on-arrival: month += 1

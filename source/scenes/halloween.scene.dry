@@ -4,6 +4,7 @@ new-page: yes
 view-if: month = 8 and age > 0
 on-arrival: month += 1
 tags: seasonal, top
+frequency: 1000
 priority: 2
 
 = Halloween

@@ -3,6 +3,7 @@ subtitle: A session with Mother and the chart.
 new-page: yes
 tags: top
 view-if:  age > 9 and month = 4
+frequency: 1000
 priority: 2
 on-arrival: month += 1;  
 

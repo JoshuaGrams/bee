@@ -1,6 +1,7 @@
 title: Church
 subtitle: Where you spend most of the time when you're not at home.
 new-page: yes
+frequency: 1000
 view-if: age > 4 and age < 8 and church-introduced = 0
 on-arrival: age += 1; church-introduced = 1
 tags: plot, top

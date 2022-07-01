@@ -1,6 +1,7 @@
 title: The Family with All the Stuff
 subtitle: An introduction to Mrs. Barron, who also homeschools her children.
 new-page: yes
+frequency: 1000
 view-if: age > 7 and barrons < 1 and month < 24
 tags: plot, top
 on-arrival: month += 1; barrons += 1

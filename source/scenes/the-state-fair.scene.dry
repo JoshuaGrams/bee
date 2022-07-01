@@ -1,6 +1,7 @@
 title: The State Fair
 subtitle: In which you attend the State Fair and have the opportunity to examine the exhibits there.
 new-page: yes
+frequency: 1000
 view-if: month > 2 and month < 5 and age > 7
 on-arrival: month += 1
 tags: seasonal, top

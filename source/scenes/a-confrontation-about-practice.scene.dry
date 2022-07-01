@@ -2,6 +2,7 @@ title: A Confrontation About Practice
 subtitle: Father has some questions for you.
 new-page: yes
 view-if: age > 7 and month > 20 and warned = 0 and month < 24 and spelling < 11
+frequency: 1000
 priority: 2
 tags: menace, top
 on-arrival: warned += 1

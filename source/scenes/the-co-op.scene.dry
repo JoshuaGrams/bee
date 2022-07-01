@@ -3,6 +3,7 @@ subtitle: Shared resources with other home-schooling families.
 new-page: yes
 view-if: age > 4 and age < 8 and friends-introduced = 0
 on-arrival: age += 1; friends-introduced = 1; perry += 1
+frequency: 1000
 tags: plot, top
 
 = The Co-op
