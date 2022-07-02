@@ -24,8 +24,9 @@ header {
 }
 #header-links {
   text-align: left;
+  float: left;
+  display: inline-block;
   margin-bottom: 0.5em;
-  margin-top: -1.5em;
 }
 #header-links a {
   padding-right: 1em;
