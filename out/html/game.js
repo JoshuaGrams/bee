@@ -112,11 +112,11 @@
       save_element.style.display = "none";
   };
 
-  window.showStats = function() {
-    if (window.dendryUI.dendryEngine.state.sceneId.startsWith('status')) {
+  window.showHelp = function() {
+    if (window.dendryUI.dendryEngine.state.sceneId.startsWith('some-help')) {
         window.dendryUI.dendryEngine.goToScene('backSpecialScene');
     } else {
-        window.dendryUI.dendryEngine.goToScene('status');
+        window.dendryUI.dendryEngine.goToScene('some-help');
     }
   };
   

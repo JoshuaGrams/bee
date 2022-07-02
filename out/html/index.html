@@ -21,25 +21,6 @@
             <table>
                 <tr>
                     <td>
-                        <label for="backgrounds_yes">Enable backgrounds</label>
-                    </td>
-                    <td>
-                        <input type="radio" id="backgrounds_yes" name="backgrounds" value="1" onclick="window.enableBg();">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="backgrounds_no">Disable backgrounds</label>
-                    </td>
-                    <td>
-                        <input type="radio" id="backgrounds_no" name="backgrounds" value="0" onclick="window.disableBg();">
-                    </td>
-                </tr>
-                <tr>
-                    <td> <hr> </td>
-                </tr>
-                <tr>
-                    <td>
                         <label for="animate_yes">Enable animation</label>
                     </td>
                     <td>
@@ -56,22 +37,6 @@
                 </tr>
                 <tr>
                     <td> <hr> </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="animate_bg_yes">Enable background animation</label>
-                    </td>
-                    <td>
-                        <input type="radio" id="animate_bg_yes" name="animate_bg" value="1" onclick="window.enableAnimateBg();">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="animate_bg_no">Disable background animation</label>
-                    </td>
-                    <td>
-                        <input type="radio" id="animate_bg_no" name="animate_bg" value="0" onclick="window.disableAnimateBg();">
-                    </td>
                 </tr>
                 <tr>
                     <td>
@@ -179,9 +144,7 @@
 
 
           <div id="header-links">
-            <!--
-            <a id="stats-link" onclick="window.showStats();" href="#">Status</a>
-            -->
+            <a id="help-link" onclick="window.showHelp();" href="#">Help</a>
           <!-- Uncomment to show the top bar. If not using stats or save files, comment out those lines.
             <a onclick="window.showSaveSlots();" href="#">Save/Load</a>
             <a onclick="window.showOptions();" href="#">Options</a>
