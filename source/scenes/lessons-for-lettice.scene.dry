@@ -17,12 +17,13 @@ Once she licks your arm for no reason at all.
 "And how are my two champion spellers getting along?" Mother asks over breakfast.
 
 - @destination-one: Lettice is very ill-behaved.
-- @destination-two: Lettice is kind of a monster, but your parents should be the ones dealing with her.
+- @destination-two: It's not Lettice's fault. Your parents should be the ones dealing with her.
 - @destination-three: Everything is fine. Mother has enough to worry about.
+- @destination-four: Everything is fine. You've taken a page from Child-Led Learning.
 
 
 @destination-one
-on-arrival: lettice += 1;
+on-arrival: lettice += 2;
 
 "Lettice does not apply herself," you say. "She's ill-behaved and not disciplined."
 
@@ -34,7 +35,7 @@ You do not mention the time Lettice stole a donut in the parish hall without pay
 
 
 @destination-two
-on-arrival: lettice += 1; parents +=1
+on-arrival: parents += 2; lettice += 1
 
 "I'm not sure whether she's abnormally vicious for her age," you say. "I'm really not trained in child development."
 
@@ -44,10 +45,20 @@ Lettice stirs her instant oatmeal. When Mother has stopped looking, Lettice deli
 
 
 @destination-three
-on-arrival: parents -= 1; poverty += 1
+on-arrival: parents -= 1; poverty += 2
 
 "Everything is going very well," you say.
 
 Mother's face smoothes out from the anxious waiting expression it was holding. "Oh, I'm so glad," she says. Then she makes a check mark on a piece of note paper. 
 
 "That's something successfully delegated," she adds, in a lower voice.
+
+
+@destination-four
+view-if: child-led > 0
+on-arrival: lettice -= 1; parents -= 1;
+
+"We manage," you say.
+
+Lately, you've been devising art lessons that happen to have words in them. Vowel sounds have their own specific colors. Qs are polka-dotted, and the dots are the color of U.
+

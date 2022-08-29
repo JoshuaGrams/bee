@@ -37,28 +37,28 @@ go-to: criticism
 You can picture the shapes of the letters before you read. 
 
 
-@criticism
-go-to: lip-move; what-wearing
+@criticism 
 
 You get through three of Mother's words, very calm, every easy, before anyone interrupts you.
 
-
-@what-wearing
-on-arrival: status += 1
-
-"Is that what you're going to be wearing?" Mrs. Perry asks.
-
-"Everyone wears the same thing at the televised Bee," Mother explains, before you have a chance to figure out what is wrong with your button-down shirt and long corduroy skirt. They're modest enough, certainly?
-
-"Good," says Mrs. Perry. "Good."
-
-
-@lip-move
-on-arrival: world += 1
-
 "Don't move your lips while you're thinking," Mrs. Perry advises, from behind the video camera. "It makes your performance less impressive."
 
+- @what-matter: What does that matter?
+- @good-point: Then again, maybe it's best to awe the television audience.
+
+
+@what-matter
+on-arrival: status -= 1
+
 You glance at Mother. It doesn't matter if your performance is *impressive*; it's a question of winning or not, right?
+
+"We want you to give the impression of being a very calm, focused, and brilliant young person," Mrs. Perry explains. "So that the main-stream media will have a hard time making fun of your home-schooling background, and will be forced to take you seriously."
+
+That may be what Mrs Perry wants. It doesn't have to be what you want.
+
+
+@good-point
+on-arrival: status += 1
 
 "We want you to give the impression of being a very calm, focused, and brilliant young person," Mrs. Perry explains. "So that the main-stream media will have a hard time making fun of your home-schooling background, and will be forced to take you seriously."
 

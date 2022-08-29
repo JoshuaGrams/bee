@@ -33,7 +33,7 @@ Shabby beige corridors and flickering lights are not the beginning and end of th
 
 @ask-to
 view-if: child-led > 0
-choose-if: jerome > 5 
+choose-if: jerome > 2 
 unavailable-subtitle: That would definitely be too strange.
 
 "Could we be... sort of... fostered by Jerome's family?" you suggest. "You'd still officially be our teachers, but we could spend our days over there with them."

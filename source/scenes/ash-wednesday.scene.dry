@@ -15,28 +15,54 @@ The point of the sermon is the same as it always is. We are all sinners. We must
 
 After the service, Mother and Father have you sit down and write down your lists of things you wish to correct in yourselves during the Lenten season, to make way for the coming of the savior. 
 
-- @spelling-diligence: Decide to be more diligent at spelling practice.
+- @spelling-diligence: Be more diligent at spelling practice.
 - @nicer-lettice: Be nicer to Lettice.
-- @lettice-face: Be nicer to Lettice.
+- @lettice-face: Be nicer to Lettice, even if she isn't nicer to you.
 - @tease-less: Ask for fewer selfish purchases.
+- @gripe-less: Complain less about chores.
+- @world-less: Think less about the Things of the World.
+- @status-less: Worry less about position at the Co-op and the opinions of Mrs Perry.
+- @default: Give the blandest possible answers. You're not that bad.
+
+
+@status-less
+view-if: status > 4 and age > 9
+on-arrival: status -= 2
+
+This is not a topic on which Mother and Father necessarily lead by example. Nonetheless, you have a suspicion there's something in it.
+
+
+@world-less
+view-if: world > 4
+on-arrival: world -= 2
+
+The secular is a distraction, or so you are frequently told.
 
 
 @tease-less
-view-if: poverty > 2
-on-arrival: poverty += 1
+view-if: poverty > 4
+on-arrival: poverty -= 2
 
 You resolve to ask for nothing for yourself. You already ask for few gifts or treats, but even those might stretch the tiny budget past handling. It would be better to constrain your needs to the things that Mother and Father are able to give you.
 
 
+@gripe-less
+view-if: parents > 4
+on-arrival: parents -= 2
+
+Honor thy father and mother, especially through the clipping of coupons and folding of clothes.
+
+
 @spelling-diligence
+view-if: motivation < 2
 on-arrival: spelling += 1; spelling-relief += 1; motivation = 2
 
 In handwriting smaller and neater than ever, you write down your intentions: to reduplicate your efforts, and win the championship, for the glory of your Maker and the good name of home-schooling children everywhere.
 
 
 @nicer-lettice
-view-if: lettice < 3
-on-arrival: lettice -= 1
+view-if: lettice > 2 and lettice < 5
+on-arrival: lettice -= 2
 
 You write the resolution down and glance over at Lettice. 
 
@@ -44,6 +70,12 @@ It's unlikely she's making any reciprocal resolution, but that just makes yours 
 
 
 @lettice-face
-view-if: lettice > 2
+view-if: lettice > 4
+on-arrival: lettice -= 2
 
 Lettice makes faces at you and suggests several items for your list. You ignore her. This may prove challenging.
+
+
+@default
+
+On consideration, there aren't so many things you'd like to change about yourself.

@@ -24,7 +24,9 @@ And FAGOTTINI and SACCHETTONI, CAPELLINI, CANNELLONI. You've mostly got the ini-
 
 @intaglio
 view-if: spelling > 10
-on-arrival: spelling += 1
+choose-if: motivation > 0
+unavailable-subtitle: This one takes extra work to remember.
+on-arrival: spelling += 2; motivation -= 1
 
   *intaglio, a family of print-making techniques involving cutting or incising images in a flat surface*
 

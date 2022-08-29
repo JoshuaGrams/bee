@@ -1,0 +1,17 @@
+title: Acquaintances
+new-page: true
+is-special: true
+
+[? if perry > 0 or barrons > 0 or jerome > 0 or sara > 0 : Acquaintances: ?]
+
+[? if perry > 0 : *Mrs. Perry*, home-schooling celebrity ?]
+
+[? if barrons > 0 : *Mrs. Barron*, a moody but well-off mother ?]
+
+[? if jerome > 0 : *Jerome*, smug boy whose name starts with J ?]
+
+[? if sara > 0 : *Sara*, English tutor ?]
+
+[? if epilogued > 0 : You have come to one of the four endings to Bee. If you like, you can reread the Epilogue you received, or you may restart the book from the beginning. ?]
+
+- @backSpecialScene: Go back.

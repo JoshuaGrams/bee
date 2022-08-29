@@ -14,7 +14,7 @@ It's a quiet afternoon and you have a rare and precious sort of privacy. You are
 
 "What's that?" asks the clerk.
 
-"Those home-schooled kids," says the customer voice. "Social retards. You can always tell when you meet them."
+"Those home-schooled kids," says the customer voice. "Social rejects. You can always tell when you meet them."
 
 - @show-them: Show them. Win your Bee and prove the value of your kind of upbringing.
 - @rude: Then again maybe you are obvious...?
@@ -22,7 +22,7 @@ It's a quiet afternoon and you have a rare and precious sort of privacy. You are
 
 
 @show-them
-on-arrival: motivation = 2
+on-arrival: motivation = 2; status += 1
 go-to: continuation
 
 Not that winning the National spelling bee for home-schoolers will prove that you're *socially* well adjusted, but perhaps if you wind up being interviewed on television...? Anger is only ever useful as fuel, Mother says.

@@ -1,7 +1,7 @@
 title: Church Jumble Sale
 subtitle: Helping sort goods for the annual fundraiser.
 new-page: yes
-view-if: status > 1 and status < 6 and month = 14
+view-if: status > 1 and month = 14
 frequency: 1000
 on-arrival: month += 1
 tags: menace, plot, top
@@ -131,7 +131,6 @@ Mr. Scott is a tall, lanky church member who always wears sharp suits.
 
 
 @point-out
-view-if: age < 13
 
 "I'm not actually a teenager yet."
 

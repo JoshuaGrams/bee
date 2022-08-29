@@ -1,7 +1,7 @@
 title: A Call to Arms
 subtitle: Taking action with the legislature.
 new-page: yes
-view-if: status > 1 and status < 4 and month < 24
+view-if: status > 1 and month < 24
 frequency: 100
 tags: menace, plot, top
 on-arrival: perry += 1
@@ -55,11 +55,12 @@ Behind Mother's back, Lettice sticks out her tongue.
 
 
 @what-about-1
-on-arrival: status += 1
-go-to: smug; assignment
+on-arrival: status += 1 
 
 You stare into the blank face of Microsoft Word and then begin to type. Starting from a rough outline, it takes you about two and a half hours to come up with something you're happy with. When you're done, Mother prints your letter; you sign it and put it into an envelope she has waiting.
 
+- @assignment: Mother will be pleased.
+- @smug: Mrs Perry will be pleased.
 
 @what-about-2
 go-to: what-about-1
@@ -74,6 +75,7 @@ go-to: what-about-1
 
 
 @assignment
+on-arrival: parents -= 1
 
 "Paper mail is always better than email when you want to reach a legislator," she reminds you. "Anyone can fill out a form online."
 
@@ -81,6 +83,7 @@ You and Lettice solemnly lick your stamps and affix them. In Mother's schooling 
 
 
 @smug
+on-arrival: status += 1
 
 "When you see Mrs. Perry, you can tell her how many pages you each wrote," she says. "I think it would make her very happy."
 

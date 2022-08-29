@@ -13,8 +13,8 @@ There are some families you know which avoid Halloween and treat it as an un-Chr
 
 - @pumpkins: Gourd, squash, vine.
 - @cookies: Baked treats.
-- @cookies-2: Baked treats.
-- @cookies-3: Baked treats.
+- @cookies-2: Cookies again, and Lettice is getting better.
+- @cookies-3: Lettice, dominating at cookie-decoration.
 - @candy: Candy for the trick-or-treaters.
 
 
@@ -38,7 +38,7 @@ She gets a bit frustrated, but Mother shows her how to hold the tube and apply a
 
 
 @cookies-2
-view-if: age > 8 and age < 11
+view-if: age = 9
 
 COOKIES
 
@@ -48,7 +48,7 @@ Lettice is handy with the piping tube and draws stems onto her pumpkins, or shad
 
 
 @cookies-3
-view-if: age > 10
+view-if: age > 9
 
 COOKIES
 

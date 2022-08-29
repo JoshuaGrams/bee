@@ -12,15 +12,13 @@ One of your chores is maintaining the coupons. There are coupon mailers that com
 
 Once a week you sit down with a big pair of sharp scissors and cut out all the ones that might be useful to the family. Then you file them by category in a red coupon wallet. The coupon wallet is divided by index cards and has such categories as SOUP, PERSONAL CARE, PRODUCE (there are rarely any produce coupons), PAPER GOODS, and so on.
 
-- @next: Snip!
+- @scissor-check: Snip!
+- @while-at-store: Snip!
 - @make-offer: Offer Lettice the mailers, as promised, for collage-making.
 
 
-@next
-go-to: scissor-check; while-at-store
-
-
 @while-at-store
+view-if: lettice < 3
 
 Mother brings in the week's shopping list, and you go through and match it up as well as you can to the coupons you have, so they're all ready-pulled for the store trip. 
 
@@ -49,6 +47,7 @@ Yes. Lettice is obsessed this week with fast food hamburgers, which she is not a
 
 
 @scissor-check
+view-if: lettice > 2
 
 Lettice is envious of your use of the scissors. They are not the blunt childproof ones, but have genuine sharp points.
 

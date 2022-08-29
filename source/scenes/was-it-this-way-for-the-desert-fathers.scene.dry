@@ -2,7 +2,7 @@ title: Was It This Way For the Desert Fathers?
 subtitle: The private mystery of letters.
 new-page: yes
 frequency: 1000
-view-if: world > 4 and month < 24 and spelling-relief > 3 and spelling > 4
+view-if: world > 4 and month < 24 and spelling > 4 and spelling-relief > 0
 on-arrival: month += 1
 priority: 2
 tags: menace, top
@@ -12,12 +12,12 @@ tags: menace, top
 In the early, filtered light, when you are doing your spelling and no one else is awake, you think things about your spelling words that are half dreams.
 
 - @sound: how solid the sounds are
-- @mankind: how they are the dust of lost peoples
+- @mankind: how they are the dust of lost peoples (that you will never meet)
 - @no-one: no one else would have these thoughts
 
 
 @sound
-on-arrival: world -= 2
+on-arrival: motivation = 2; spelling-relief += 1
 
 Sometimes a word could be a palace. Sometimes the aspirates could be curtains of thick cloth, the glottals could be walls, the liquids a slippery marble floor.
 
@@ -25,7 +25,7 @@ Sometimes the spelling of a word inhabits every sense, not just seen and heard b
 
 
 @mankind
-on-arrival: world -= 2
+on-arrival: world += 2; spelling-relief += 1
 
 If a woman were a shut-in all her life — as you sometimes feel you are — perhaps late in life she would ask for someone to bring her a tray, and on that tray as many as possible of the things of the world outside, then perhaps she would lie on her white cotton pillow and wait; expecting to have to make do with a jar of tea, a scrap of sailcloth, some frayed electric wire, a Chinese coin.
 
@@ -33,7 +33,7 @@ But her caretaker, being cleverer, would bring her the dictionary, and she would
 
 
 @no-one
-on-arrival: world -= 2
+on-arrival: world -= 2; spelling-relief += 1
 
 No one else would have these thoughts.
 

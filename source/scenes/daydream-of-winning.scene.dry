@@ -2,7 +2,7 @@ title: Daydream of Winning
 subtitle: Because sometimes a girl just has to stare out the window.
 new-page: yes
 tags: top
-view-if: age > 7 and month < 23
+view-if: age > 7 and month < 23 and motivation = 0
 frequency: 500
 
 = Daydream of Winning
@@ -13,7 +13,7 @@ frequency: 500
 
 
 @last-year
-view-if: age > 11
+view-if: age > 9
 on-arrival: motivation = 2
 
 If you're going to win, it has to be this year. Next year you won't be eligible. And since Lettice doesn't show much interest in the spelling contest, she isn't going to win for the family either. 

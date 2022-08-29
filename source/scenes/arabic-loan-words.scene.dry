@@ -56,7 +56,7 @@ If you still lived in the times when there were kings and treasure-houses and sw
 
 
 @or-jerome
-view-if: jerome > 3
+view-if: jerome > 1
 on-arrival: jerome += 1
 
 "Why do you think no one keeps treasure in a big cave any more?" you ask Jerome. 
@@ -103,7 +103,7 @@ Mother's mouth scrunches sideways. "I know, kiddo, but there's a reason they sel
 
 
 @note-that
-on-arrival: parents += 1
+on-arrival: parents += 2
 
 "You and Father had me," you say. "And also afterward you had Lettice." There's more that you mean to add to that paragraph, but before you can get there, Mother's face becomes so terrifying that you stop.
 
@@ -139,7 +139,7 @@ If you were not killed, you would be completely sanded down, polished, perfected
 
 
 @share-news
-view-if: jerome >= 3
+view-if: jerome > 1
 on-arrival: jerome += 1
 
 "biab," Jerome texts when you tell him this. "afk squeezng fluffys butt."
@@ -155,6 +155,7 @@ If people understood they were smearing their wrists and necks with the hindquar
 
 
 @apologize
+on-arrival: parents -= 1
 
 Later you try to apologize.
 
@@ -168,7 +169,6 @@ A couple of nights later you can hear the sound of Mother crying about something
 
 @maybe-sara
 view-if: sara > 0
-on-arrival: sara += 1
 
 You ask Sara about animals being used for perfume ingredients.
 
@@ -213,8 +213,7 @@ One of the Co-op fathers turns to stare at you and Mrs. Perry. Hastily, she shov
 
 
 @try-on-sara
-view-if: sara >= 1
-on-arrival: sara += 1
+view-if: sara > 0
 
 The next time you're in English lessons, you share with Sara your theory of how the disgusting origins of perfumes demonstrate Divine distaste for worldly adornments.
 

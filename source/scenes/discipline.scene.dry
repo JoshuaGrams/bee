@@ -1,7 +1,7 @@
 title: Discipline
 subtitle: Questions of "discipline."
 new-page: yes
-view-if: parents > 6 and month < 24 and age > 7
+view-if: parents > 7 and month < 24 and age > 7
 frequency: 1000
 priority: 2
 tags: menace, top
@@ -26,7 +26,7 @@ And when you get older, and get out of here, you will never again have to worry 
 
 
 @maybe
-view-if: age > 10
+view-if: age > 9
 
 "I guess it might be comforting to have all your things lined up exactly the way you want them," you allow.
 
@@ -62,11 +62,11 @@ Father has come to your room holding the latest culprit. It is a blue striped Ox
 
 
 @perhaps
-view-if: age > 9
+view-if: age > 8
 
 "Have you considered speaking with a therapist about this shirt compulsion?" you ask Father when he confronts you about it.
 
-"We're not here to talk  about my preferences," Father says. "You have clear instructions, and you know how to follow them."
+"We're not here to talk about my preferences," Father says. "You have clear instructions, and you know how to follow them."
 
 - @point: Point out the annoyance value of following arbitrary instructions.
 - @mention: Mention that shirt-sorting cuts into your spelling practice time.
@@ -81,6 +81,7 @@ You explain the spelling time situation. "Spelling practice also takes disciplin
 
 
 @point
+on-arrival: parents += 1
 
 "It's arbitrary," you say.
 

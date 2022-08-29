@@ -69,7 +69,7 @@ Lettice is gone before you get to the last letter.
 
 
 @destination-three
-choose-if: age > 9
+choose-if: age > 8
 unavailable-subtitle: Mother thinks you might spill. Maybe when you're older.
 
 On the counter is a large bowl containing seven measured cups of white sugar. The crystals gleam. It almost looks magic.
@@ -100,7 +100,7 @@ Mother comes into the kitchen. "*I* will pour in the sugar," she says. "And *you
 
 
 @destination-four
-choose-if: age > 10
+choose-if: age > 9
 unavailable-subtitle: You'd have to be up past bed-time for that chore.
 
 Every surface in the kitchen is covered in a dark purple sticky goo that smells like blackberries. Every container, every pot, every strainer, every wooden spoon and every plastic spatula. The jam has been put up, and so has syrup, essence, juice.

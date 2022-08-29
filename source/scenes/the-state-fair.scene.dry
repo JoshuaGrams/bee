@@ -59,6 +59,7 @@ It had not occurred to you that the tree quilt might ever need washing.
 
 
 @candy
+view-if: poverty < 5
 
 With the last of your pocket money for this week, you buy a wad of pink cotton candy spun around a paper cone. It is not as satisfying to eat as to look at. As soon as it gets into your mouth, it dissolves into insubstantial goo. 
 
@@ -83,18 +84,39 @@ You hold up the cotton candy and the sunlight shines through the outer edges of 
  
 
 @livestock
-view-if: age > 9
+view-if: age > 8
 
 There are large pigs and somewhat larger pigs and black pigs and pink pigs and white pigs. There are cows of various types. All this animal flesh, so warm and smelly, packed so close together, makes you almost feel a little ill.
 
 Healthy-looking 4H types stand around the stalls. You imagine what it would be like living on a farm with animals around all the time, and big open fields of land. It sounds exciting. There might even be horses.
 
+- @prizes: Admire the prize bows.
+- @hierarchy: Consider the hierarchy of pig-kind.
+
+
+@hierarchy
+on-arrival: status += 1
+
+Perhaps it isn't so different from people. Some have talents and size and the ability to boss around the other pigs.
+
 
 @cake
-view-if: age > 10
+view-if: age > 9
 
 The exhibition cakes have been inside their glass cases for weeks now. This is an unnatural life-span for a cake, and a few of them appear to be showing the strain, with cracks appearing in their frosting or a noticeable drying effect. 
 
-But even in their slightly over-the-hill condition, they are still very impressive -- decorated typically for a reception, white flowers on white frosting, lacy drizzles of chocolate, lakes of ganache with white chocolate swans gliding over the surface.
+- @prizes: Admire the prize bows.
+- @invention: Admire the inventiveness.
+- @question: Question the point.
 
-It looks like the remains of a thousand canceled weddings.
+@invention
+on-arrival: world += 1
+
+Even in their slightly over-the-hill condition, they are still very impressive -- decorated typically for a reception, white flowers on white frosting, lacy drizzles of chocolate, lakes of ganache with white chocolate swans gliding over the surface.
+
+@question
+on-arrival: world -= 1
+
+You dubiously consider the exhibition hall. It looks like the remains of a thousand canceled weddings, and no one really got to eat anything.
+
+

@@ -1,0 +1,37 @@
+title: Co-op Dues
+subtitle: Expenses are rising.
+new-page: yes
+view-if: age > 7 and poverty > 5
+frequency: 1000
+tags: plot, top
+
+= Co-op Dues
+
+"Field trips cost more than they used to," your mother is saying to Mrs. Perry. "And now the dues are going up as well?"
+
+Mrs. Perry smiles tightly. "There are rental costs for this space," she says. "Those go up too."
+
+- @suggest-scholarship: Perhaps the Co-op has scholarships?
+- @press-mother: Perhaps your parents need to spend less on other things.
+
+
+@suggest-scholarship
+on-arrival: status += 2; poverty -= 2
+
+You raise the question. "Are there scholarships available?"
+
+Mrs. Perry looks surprised that you spoke.
+
+"Sometimes academic high achievers get support at private schools," you remark.
+
+
+
+
+@press-mother
+on-arrival: poverty += 2; status -= 1
+
+You don't put the point to her until you're in the car afterwards, but then you explain. It's embarrassing not to be able to go on trips. It makes you stand out. It makes Mrs. Perry give you pointed looks.
+
+Your mother closes her eyes. She leaves them closed so long that she misses the light turning green, and the other cars have to honk to get her attention.
+
+"I'm so tired, honey," she says. But that's the only remark she makes about it.

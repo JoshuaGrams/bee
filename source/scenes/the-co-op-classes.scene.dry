@@ -1,0 +1,41 @@
+title: Classes at the Co-op
+subtitle: Doing more to be visible.
+new-page: yes
+view-if: age > 7 and status > 5
+frequency: 400
+tags: plot, top
+
+= Classes at the Co-op
+
+You have sometimes overheard Mrs Perry saying good things about other parents who teach classes. Things like "So-and-so really pulls her weight around here" or "Such-and-so is always a big help." 
+
+Then she'll cut her eyes towards someone she thinks is *not* a big help, and though she doesn't say anything else, everyone knows what she means.
+
+
+- @suggest-options: Maybe your mother could teach sewing.
+- @maybe-you: Maybe you could teach your own class.
+- @maybe-perry: Maybe Mrs Perry will have to manage without your family.
+
+
+@suggest-options
+on-arrival: status += 1
+
+You lay out the idea: Mother could bring in her sewing machine and do a few classes on how to make simple home things. The students could supply their own fabrics, or someone could barter for them.
+
+Father and Mother always say that they are too busy, however. "Our dues will have to be enough for now," Mother says.
+
+
+@maybe-you
+view-if: age > 8
+on-arrival: status += 2
+
+"Do you think *I* could teach a class?" you ask Mother. "We could do spelling words."
+
+"Maybe when you're older," she says. "It's usually the teenagers who are allowed to teach classes." 
+
+When she notices your expression, she adds, "It's not because you don't have anything you could teach them, sweetie. It's just that when you're not very old yourself, it can be hard to make students who are your own age, or even older than you are, follow your instructions. But maybe you could start designing the curriculum you'll use when you're older; how about that?"
+
+@maybe-perry
+on-arrival: status -= 2
+
+If she wants your help, she can ask for it. Most likely she will not ask for it.

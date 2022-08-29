@@ -16,17 +16,17 @@ The carpet is very close to your nose. Like everything. The thought that comes i
 *If I ever killed myself, it would be from boredom.*
 
 - @everyone: Everyone has odd half-asleep thoughts. It's nothing.
-- @nationals: If you go to Nationals, you'll get to make a trip cross-country.
 - @text: Text Jerome.
 - @text-2: Text Jerome.
 - @romance: You'd be less bored if you had a boyfriend.
+- @nationals: If you go to Nationals, you'll get to make a trip cross-country.
 
 
 @text
-view-if: jerome > 2 and child-led > 0 and jerome-texted = 0
-choose-if: jerome > 4
+view-if: jerome > 1 and child-led > 0 and jerome-texted = 0
+choose-if: jerome > 2
 unavailable-subtitle: Hm. Too weird?
-on-arrival: world -= 2; jerome += 1; jerome-texted = 1
+on-arrival: world += 1; jerome += 1; jerome-texted = 1
 
 You: Hey Jerome. Are you up?
 
@@ -52,10 +52,10 @@ Jerome: do not ask me what I think it looks liek
 
 
 @text-2
-view-if: jerome > 2 and child-led > 0 and jerome-texted = 1
-choose-if: jerome > 4
+view-if: jerome > 1 and child-led > 0 and jerome-texted = 1
+choose-if: jerome > 2
 unavailable-subtitle: Hm. Too weird?
-on-arrival: world -= 2; jerome += 1; jerome-texted = 2
+on-arrival: world += 1; jerome += 1; jerome-texted = 2
 
 You: Hi Jerome. What are you doing right now?
 
@@ -77,8 +77,8 @@ Jerome: time for breakfast ttyl
 
 
 @romance
-view-if: age > 10
-on-arrival: world += 2
+view-if: age > 9
+on-arrival: world += 2; parents += 1
 
 Your parents would never permit you to date at your age. Obviously. But having someone to talk things over with, someone who would reliably be around to chat with you online and maybe even text you on a regular basis — that would make things feel less solitary, wouldn't it?
 

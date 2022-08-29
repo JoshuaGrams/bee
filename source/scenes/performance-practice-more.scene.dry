@@ -1,0 +1,35 @@
+title: Additional Performance Practice
+subtitle: Spelling bees aren't just about spelling.
+new-page: yes
+view-if: age > 9 and spelling > 2 and month < 24
+on-arrival: month += 1; spelling += 1; perry += 1
+frequency: 40
+tags: drill, top
+
+= Additional Performance Practice
+
+Practice has become more serious, the closer you get to a large event.
+
+"Is that what you're going to be wearing?" Mrs. Perry asks.
+
+
+- @what-matter: What does that matter?
+- @good-point: Admittedly, the home-spun look might not go over well.
+
+
+@what-matter
+on-arrival: status -= 1
+
+"Everyone wears the same thing at the televised Bee," Mother explains, before you have a chance to figure out what is wrong with your button-down shirt and long corduroy skirt. They're modest enough, certainly?
+
+"Good," says Mrs. Perry. "Good."
+
+
+@good-point
+on-arrival: status += 1
+
+You look down at your clothing. It looks like it was made by your mother, because it was.
+
+"Everyone wears the same thing at the televised Bee," Mother explains.
+
+"Good," says Mrs. Perry. "Though we could have taken up a collection."

@@ -11,13 +11,13 @@ on-arrival: month += 1
 Mother is at her sewing machine. You are at the ironing board. When you're not needed, you're allowed to read your book. The rest of the time, you're a well-oiled part of Mother's operation: getting the creases out of newly-sewn items, ironing on facings and setting pleats. Not having to get up and do these steps herself saves Mother a great deal of time.
 
 - @noticing: Pay attention to what Mother is doing.
-- @make-pleats: Give extra attention to the pleated skirt.
+- @make-pleats: Give dutiful attention to the pleated skirt.
 - @martyred: Work longer than necessary. Possibly burn yourself. No one notices anyway.
 - @spell-through: Set up your spelling list so you can see it while you iron.
 
 
 @spell-through
-on-arrival: parents -= 1; spelling-relief += 1; spelling += 1
+on-arrival: spelling-relief += 1; spelling += 1
 
 If you prop the book on a clipboard opposite the iron, you can see it while you work, and recite off letters with each stroke of the iron. XANTHOSIS gets you through Father's collar and cuffs.
 
@@ -25,7 +25,6 @@ If you prop the book on a clipboard opposite the iron, you can see it while you 
 
 
 @make-pleats
-view-if: parents < 3
 on-arrival: parents -= 1
 
 The pleated skirt is tricky work, and you give it your full attention, and many squirts with the water bottle. Hot steam rises from the cloth. 

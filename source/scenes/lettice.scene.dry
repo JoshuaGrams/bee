@@ -22,7 +22,6 @@ Lettice is not interested in learning to spell for the Bee, either.
 
 
 @ally
-on-arrival: lettice -= 1
 
 Who else is there to talk to on long road trips? Who else has to wake up as early as you do for prayers? Even the other home-schooling kids you know aren't home-schooled in exactly the same way.
 
@@ -30,7 +29,7 @@ One night you're sent to bed early. For comfort, Lettice puts a drawing on your 
 
 
 @mental
-on-arrival: lettice += 1
+on-arrival: lettice += 2
 
 You ask Mother whether something is wrong with Lettice's learning ability. Might she be dyslexic? Autistic? Delayed?
 

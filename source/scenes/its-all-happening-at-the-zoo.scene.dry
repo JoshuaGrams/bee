@@ -15,12 +15,14 @@ priority: 2
 - @hang-jerome: Do the reptile house with Jerome and Flauberta.
 - @hang-barrons: Accompany Mrs. Barron and the Barron boys to see the lions.
 - @hang-lettice: Take a drawing expedition with Lettice.
-- @whatever: Wander solo.
+- @whatever: Wander solo and see the polar bears.
+- @whatever-2: Wander solo and see the Night House.
+- @whatever-3: Wander solo and see the tortoises.
 
 
 @hang-perrys
 view-if: perry > 0
-on-arrival: status += 1; perry += 1
+on-arrival: perry += 1
 
 Mrs. Perry is wearing an A-line skirt and pearls, and holds her daughters by the hand. Mr. Perry is not along because he works days at a factory that puts custom upholstery on furniture.
 
@@ -35,6 +37,7 @@ She poses with the two girls. "Honey, point towards that bush as though you're n
 
 
 @snap
+on-arrival: status += 1;
 
 You press the shutter.
 
@@ -42,6 +45,7 @@ You press the shutter.
 
 
 @candid
+on-arrival: status -= 1;
 
 You snap just when the wind blows Mrs. Perry's skirt up and shows the top of her stockings.
 
@@ -52,7 +56,7 @@ She gives the camera back to you and you have another go.
 
 @hang-jerome
 view-if: jerome > 0 and child-led > 1
-choose-if: jerome > 3
+choose-if: jerome > 1
 unavailable-subtitle: Jerome doesn't seem keen for your company.
 on-arrival: jerome += 1
 
@@ -101,7 +105,7 @@ You get a copy of the worksheets and do them as well. It feels more like a spell
 
 
 @hang-lettice
-view-if: age > 10
+view-if: age > 9
 choose-if: lettice < 4
 unavailable-subtitle: A whole day with Lettice? As if.
 on-arrival: lettice -= 1; parents += 1
@@ -114,28 +118,27 @@ She sketches the baby elephant repeatedly, from a bench under a tree, while all 
 
 
 @whatever
-go-to: polar; night; tortoises
+view-if: age < 9
 
 You wander the zoo in solitary splendor, stopping whenever the mood takes you, accountable for nothing but being back at the main gate at the end of the afternoon. There's no one to buy you lunch or ice cream, so you are getting a little light-headed by 3 PM or so. 
 
-On the other hand! 
-
-
-@polar 
+On the other hand!
 
 There's also no one to drag you away from the polar bears before you want to go. There's nothing to stop you just standing there and observing them minutely, the way their fur grows and the way their faces are arranged, and the length and power of their limbs. 
 
 Having other people around makes it very hard to see things properly, because you are always conscious of also being watched.
 
 
-@night
+@whatever-2
+view-if: age = 9
 
 There's no one to stop you from resting in the Night House for fifteen minutes, watching the koalas and the owls until your eyes have really adjusted and you can see them *properly*. 
 
 It is quiet in there, like a chapel during prayer time before the service begins.
 
 
-@tortoises
+@whatever-3
+view-if: age > 9
 
 There's no one to direct your attention away from the mating tortoises, so you're able to watch them "doing behavior," as your mother would say. 
 

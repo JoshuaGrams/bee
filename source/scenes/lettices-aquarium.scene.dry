@@ -1,8 +1,8 @@
 title: Lettice's Aquarium
-subtitle: Lettice works on a project.
+subtitle: Encouraging Lettice in a project.
 new-page: yes
-view-if: age > 7 and lettice < 5 and month < 24
-on-arrival: month += 1; lettice -= 1
+view-if: age > 7 and lettice < 5 and month < 24 and aquarium < 4
+on-arrival: month += 1; lettice -= 1;
 frequency: 200
 tags: menace, top
 
@@ -21,7 +21,7 @@ The inside of the aquarium is pages and pages of fish, and curious shelled creat
 
 @make-fun
 view-if: spelling > 0
-on-arrival: spelling-relief += 1
+on-arrival: spelling-relief += 1; lettice += 1;
 
 "You've misspelled urchin," you point out. "There's no E."
 
@@ -29,7 +29,8 @@ on-arrival: spelling-relief += 1
 
 
 @check-what-1
-view-if: age < 9
+view-if: aquarium = 0
+on-arrival: aquarium += 1
 
 The current drawing is a picture of a red puffer fish. Lettice has drawn it in crayon, and it has many many spikes. Strange objects from under the sea have gotten stuck to the spikes of the puffer, including something donut-shaped.
 
@@ -43,7 +44,8 @@ Lettice looks stumped for a moment, then shrugs. "I guess then it's a doll's tir
 
 
 @check-what-2
-view-if: age = 9
+view-if: aquarium = 1
+on-arrival: aquarium += 1
 
 Lettice has traced a starfish from a picture in a book. It is wrapped partially around a rock. Next to it there is something roughly wedge-shaped.
 
@@ -65,7 +67,8 @@ Over the water she draws a sign, like the sign at the front of a ranch. STARFISH
 
 
 @check-what-3
-view-if: age = 10
+view-if: aquarium = 2
+on-arrival: aquarium += 1
 
 On this page is a sort of chambered nautilus, shown in cross-section. Someone told Lettice that there was a mathematical proportion to the size of the chambers, and as a result she has drawn each one in carefully with a ruler to make sure that it is the right width in comparison to the one before.
 
@@ -73,7 +76,8 @@ On this page is a sort of chambered nautilus, shown in cross-section. Someone to
 
 
 @check-what-4
-view-if: age > 10
+view-if: aquarium = 3
+on-arrival: aquarium += 1
 
 Lettice is drawing with colored pencils now. She copies pictures carefully from the encyclopedia. As a result, the fish look much more realistic, but they are usually shown completely still, as though they'd been stuffed and mounted on the wall.
 

@@ -10,7 +10,9 @@ on-arrival: month += 1
 
 Father and Mother are in a reminiscent mood about how things used to be for them. These stories have a tendency to repeat after a while, like stories told before going to bed.
 
-- @onward: Listen politely.
+- @cafeteria: Listen politely.
+- @bus-smell: Listen politely.
+- @pledge-of: Listen politely.
 - @bored: Slip out of the room to do a little more reading.
 
 
@@ -41,11 +43,9 @@ You give Lettice a bright, "I see you frowning" smile and tiptoe off down the ha
 Your bedroom is a quiet private place and there is no nattering inside.
 
 
-@onward
-go-to: bus-smell; pledge-of; cafeteria
-
-
 @cafeteria
+view-if: legend = 0
+on-arrival: legend = 1
 
 "They have the most terrible food in school," says Mother. "It's all made in a big vat by a lunch lady. Sometimes it's chili and sometimes it's soup, but it always tastes disgusting. And there are hardly any fresh vegetables."
 
@@ -81,6 +81,8 @@ on-arrival: status += 1;
 
 
 @pledge-of
+view-if: legend = 1
+on-arrival: legend = 2
 
 "In school, you'd spend a lot of time doing really very nonsensical things," Mother explains. "You have to say the pledge of allegiance every day, and the teacher calls roll to make sure everyone is there. After that there are school announcements, and if some of the other students misbehave, then you lose all sorts of time waiting while the teacher brings them in line."
 
@@ -103,7 +105,7 @@ on-arrival: world += 1;
 
 
 @students-fair
-on-arrival: world += 1; parents += 1;
+on-arrival: parents += 1;
 
 "What were they being punished for?" you ask. "Sounds like it must have been pretty fun if the whole rest of the class got into it."
 
@@ -115,6 +117,8 @@ on-arrival: world += 1; parents += 1;
 
 
 @bus-smell
+view-if: legend = 2
+on-arrival: legend = 0
 
 "When I was your age," Father says, "I had to take the bus to school. It took half an hour, and the bus smelled like sour milk."
 
@@ -134,7 +138,7 @@ on-arrival: motivation = 2; status += 1
 
 
 @school-scary
-on-arrival: world += 1;
+on-arrival: world -= 1;
 
 "Sounds gross," you say.
 
@@ -150,7 +154,13 @@ on-arrival: perry += 1
 
 "Equally pointless if for different reasons," says Father. "But it doesn't behove us to speak ill of our acquaintances."
 
-- @people-listen: People listen more to Mrs. Perry than they do to Father.
+- @no-listen: He has a point.
+- @people-listen: Though people listen more to Mrs. Perry than they do to Father.
+
+@no-listen
+on-arrival: status -= 1
+
+Father turns the subject to the topic of fire drills. At least there were no shooter drills when he was in school.
 
 
 @people-listen

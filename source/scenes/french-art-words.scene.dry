@@ -1,7 +1,7 @@
 title: French Art Words
 subtitle: With lots of overlap with the Latin derivatives lists.
 new-page: yes
-view-if: age > 7 and spelling > 1 and month < 24 and art-words < 2
+view-if: age > 7 and spelling > 1 and month < 24 and art-words < 4
 on-arrival: month += 1; spelling += 2
 tags: drill, top
 frequency: 400
@@ -10,7 +10,9 @@ frequency: 400
 
 The influence of French on English is so enormous that most of the words don't feel foreign. And then there are many words that you can throw out because you've already got them on the Latin derivatives list.
 
-- @art: GOUACHE, COLLAGE, GRISAILLE
+- @art: COLLAGE
+- @art-3: GOUACHE
+- @art-4: GRISAILLE
 - @art-2: SURREALISM, FAUVISM, CUBISM
 
 
@@ -22,13 +24,32 @@ The long runs of vowels and the sometimes-almost-silent Ls are a trick, but cons
 
 - @knew-before: Of course, you've run into collages before, in Sunday school.
 - @tell-lettice: Tell Lettice about the concept of collage.
+
+
+@art-3
+on-arrival: art-words = 2
+view-if: art-words = 1
+
 - @tell-lettice-2: Tell Lettice about the concept of gouache.
+- @no-tell-lettice: Don't. The results could be messy.
+
+
+@no-tell-lettice
+on-arrival: parents -= 1
+
+Sometimes it's best not to cause the creation of chores in the first place.
+
+
+@art-4
+on-arrival: art-words = 3
+view-if: art-words = 2
+
 - @tell-lettice-3: Tell Lettice about the concept of grisaille.
+- @no-tell-lettice: Don't. The results could be messy.
 
 
 @tell-lettice
 on-arrival: collage-ready = 1
-view-if: lettice < 2 and age < 9
 
 She gets the idea without very much explanation, and gets as far as cutting up two back copies of *The Old Schoolhouse* before Mother confiscates the scissors. 
 
@@ -61,8 +82,8 @@ Lettice weighs the offer for a moment, then shrugs and says, "Okay, that's cool.
 
 
 @art-2
-on-arrival: art-words = 2
-view-if: art-words = 1
+on-arrival: art-words = 4
+view-if: art-words = 3
 
 SURREALISM, FAUVISM, CUBISM. You letter the cards and color their edges, but you don't get very far with the meanings. The dictionary definitions of these words are almost entirely useless, the descriptions unimaginable.
 
@@ -71,6 +92,7 @@ SURREALISM, FAUVISM, CUBISM. You letter the cards and color their edges, but you
 
 
 @wikipedia
+on-arrival: world += 1
 
 Afterward you mostly wish you hadn't. The Fauvist paintings are too *pink*, as though the people being painted all got sunburned first. And the Cubist paintings aren't really proper paintings at all. What would sentences be like, if people felt free to break up words and stick them together at all odd angles like that? Noncomp sens icpletely cal.
 
@@ -88,7 +110,6 @@ If you looked up every single word that comes your way, you'd be here all week. 
 
 
 @tell-lettice-3
-view-if: lettice < 2 and age > 9
 on-arrival: lettice -= 1
 
 You show Lettice the pictures of grey-toned paintings, so still and colorless they look like statues. She studies them closely, frowning. 
@@ -97,7 +118,6 @@ Three days later on your pillow there is a picture all in different shades of pe
 
 
 @tell-lettice-2
-view-if: lettice < 2 and age = 9
 on-arrival: lettice -= 1
 
 You tell Lettice about gouache. 

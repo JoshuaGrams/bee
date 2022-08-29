@@ -49,8 +49,8 @@ Father makes liverwurst sandwiches sometimes. The 'wurst is a grey paste that co
 
 
 @anschluss
-on-arrival: spelling += 1
-view-if: age > 9
+on-arrival: spelling += 1; motivation -= 1; world -= 1
+view-if: age > 8 and motivation > 1
 
 No one wants to say these words or spell them or talk about them. Like the words are toxic; like the language itself is welted up by a poisonous insect bite.
 
@@ -59,7 +59,7 @@ Even if you do not think, deliberately do not think, about the history that goes
 
 @ursprache
 on-arrival: spelling += 1
-view-if: age > 10
+view-if: spelling > 10
 
 2006, this word was in the final round of the National Bee. 
 

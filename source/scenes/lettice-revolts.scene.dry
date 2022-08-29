@@ -1,7 +1,7 @@
 title: Lettice Revolts
 subtitle: Lettice tries to escape.
 new-page: yes
-view-if: lettice > 10 and month < 24
+view-if: lettice > 9 and month < 24
 frequency: 1000
 priority: 2
 tags: menace, top

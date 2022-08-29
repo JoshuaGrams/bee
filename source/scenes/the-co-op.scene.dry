@@ -50,12 +50,11 @@ These classes are held in the back room of the resource center. Inside it always
 
 - @not-often: Mercifully, your parents don't sign you up often.
 - @wish-more: Actually, it might be nice to have more classes with other kids.
-- @more-status: Or maybe your parents would get more respect from other families if they taught more joint classes themselves.
 
 
 @not-often
 go-to: bulletin
-on-arrival: parents -= 1
+on-arrival: parents += 1
 
 It's a mercy your parents don't sign you up often. The class on introductory Spanish, for instance. You thought it might help you with spelling words that are related to Spain, but most of the class was devoted to learning to say "hello" and "thank you" in Spanish. 
 
@@ -92,27 +91,3 @@ Other parents are always talking about Mrs Perry and the Perry kids. Her picture
 
 They're like an example in a textbook; you overheard Mother saying so to Father once. "A textbook example," she said, and she looked annoyed. Maybe she was jealous too.
 
-
-@more-status
-on-arrival: status += 1
-
-Sometimes you suggest possible courses your own parents could teach: Mother could bring in her sewing machine and do a few classes on how to make simple home things. 
-
-This would impress Mrs. Perry. You have sometimes overheard her saying good things about other parents who teach classes. Things like "So-and-so really pulls her weight around here" or "Such-and-so is always a big help." 
-
-Then she'll cut her eyes towards someone she thinks is *not* a big help, and though she doesn't say anything else, everyone knows what she means.
-
-Father and Mother always say that they are too busy, however. "Our dues will have to be enough for now," Mother says.
-
-- @maybe-you: Maybe you could teach your own class.
-- @bulletin: For now you'll have to make do with field trips with other kids.
-
-
-@maybe-you
-on-arrival: spelling-relief += 1
-
-"Do you think *I* could teach a class?" you ask Mother. "We could do spelling words."
-
-"Maybe when you're older," she says. "It's usually the teenagers who are allowed to teach classes." 
-
-When she notices your expression, she adds, "It's not because you don't have anything you could teach them, sweetie. It's just that when you're not very old yourself, it can be hard to make students who are your own age, or even older than you are, follow your instructions. But maybe you could start designing the curriculum you'll use when you're older; how about that?"
