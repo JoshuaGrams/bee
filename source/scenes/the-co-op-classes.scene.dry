@@ -2,7 +2,7 @@ title: Classes at the Co-op
 subtitle: Doing more to be visible.
 new-page: yes
 view-if: age > 7 and status > 5 and month < 24
-frequency: 400
+frequency: 500
 tags: plot, top
 
 = Classes at the Co-op
@@ -14,6 +14,7 @@ Then she'll cut her eyes towards someone she thinks is *not* a big help, and tho
 
 - @suggest-options: Maybe your mother could teach sewing.
 - @maybe-you: Maybe you could teach your own class.
+- @embarrassing-parents: Maybe you could distance yourself from your embarrassing parents.
 - @maybe-perry: Maybe Mrs Perry will have to manage without your family.
 
 
@@ -34,6 +35,35 @@ on-arrival: status += 2
 "Maybe when you're older," she says. "It's usually the teenagers who are allowed to teach classes." 
 
 When she notices your expression, she adds, "It's not because you don't have anything you could teach them, sweetie. It's just that when you're not very old yourself, it can be hard to make students who are your own age, or even older than you are, follow your instructions. But maybe you could start designing the curriculum you'll use when you're older; how about that?"
+
+
+@embarrassing-parents
+on-arrival: status -= 2; parents += 2
+
+"When I'm older, I'll spend a lot more time helping out around here," you assure Mrs. Perry. "I don't know why mother and father don't do that already."
+
+"We all have different vocations," says Mrs. Perry unexpectedly. "Your parents contribute to the world in their own way."
+
+- @accept-this: Accept this.
+- @ask-how-specifically: Ask how, specifically.
+
+
+@accept-this
+on-arrival: parents -= 1
+
+"I guess."
+
+"Charity begins at home," adds Mrs. Perry. Then her attention is drawn away.
+
+
+@ask-how-specifically
+
+"How is that?" you ask.
+
+"Your father's newsletter is a unique contribution," says Mrs. Perry, half smiling. 
+
+Then she adds, in a different tone, as though the thought caught her from behind: "And in a true emergency, there's no one better than your mother."
+
 
 @maybe-perry
 on-arrival: status -= 2

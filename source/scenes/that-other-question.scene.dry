@@ -4,7 +4,7 @@ new-page: yes
 view-if: age > 7 and month < 24
 on-arrival: month += 1
 tags: menace, top
-frequency: 100
+frequency: 200
 
 = That Other Question
 
@@ -19,7 +19,7 @@ Through the arm of your coat, you feel Mother flinch. This could go any of a num
 
 
 @see-what
-view-if: parents > 4
+view-if: parents > 2
 on-arrival: parents += 1
 
 "I sometimes think that myself," Mother says, with so much bitter energy that the woman is abashed.
@@ -30,6 +30,7 @@ The bus stops sharply. Original Style Tuna Flavor Pate bounces out everywhere.
 
 
 @see-what-2
+view-if: parents <= 2
 go-to: explaining; lying
 
 
@@ -47,7 +48,6 @@ Mother goes on. "I wish they could have a normal life, but the risk... if they g
 
 
 @explaining
-view-if: parents < 5
 on-arrival: status += 1
 
 "They're home-schooled," says Mother. And she explains in the usual way. Yes, it's legal. Yes, the state supervises. Yes, there are set topics that you're supposed to cover at some point during the process. Yes, you have activities that allow you to interact with other members of your peer group. 

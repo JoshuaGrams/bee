@@ -1,0 +1,73 @@
+title: Other Parishioners
+subtitle: Looking around at church.
+new-page: yes
+view-if: status > 2 and parishioners < 3 and age < 10 and month < 24
+frequency: 400
+on-arrival: month += 1; parishioners += 1
+
+Your parents go to a very mixed church. For instance, Mrs. Perry goes there, and the Perry family believes in the end of days. Mrs. Perry asks Father Sudwell about the Rapture a little more often than he would prefer.
+
+On the other hand, sometimes you find cars in the parking lot with stickers for Democratic candidates. A couple of the younger parishioners occasionally have colored streaks in their hair, or too many ear-piercings.
+
+- @ask-mother: Ask Mother her opinion about this.
+- @ask-father: Ask Father his opinion.
+- @ask-mrs-p: Ask Mrs. Perry about the girl with the triple-pierced ears.
+- @ask-mrs-p-2: Ask Mrs. Perry about why she comes here.
+
+
+@ask-mother
+on-arrival: status -= 1
+
+You ask Mother why it is that so many different kinds of people come to church, some of whom don't seem to believe everything you do.
+
+"When you go to the communion rail, everyone is as important as everyone else," she says. 
+
+"Even if they have funny breath?" asks Lettice. "Like Mr. Fundt?"
+
+"In Christ there is no east or west," says Mother. "Nor any halitosis."
+
+
+@ask-father
+on-arrival: status -= 1; world += 1
+
+"It's good to be exposed to a variety of opinions," Father says; which is not the line he takes when you and Lettice ask to take an overly grown-up book out of the library. "That way, you can learn to defend your own views against them. It's best to learn how to argue civilly with people who are mostly on your same side, at church, before you need to go out and practice those skills more broadly in a more secular environment."
+
+
+@ask-mrs-p
+on-arrival: status += 1
+
+You stand near Mrs. Perry one day during coffee-and-donuts time.
+
+"There was a girl in the pew ahead of me who had *three* piercings in each ear," you tell Mrs. Perry. 
+
+"Really?" says Mrs. Perry. She wipes her mouth with her little coffee napkin and starts scanning the room.
+
+"I prayed for her secretly during the Prayers of the People," you add.
+
+Mrs. Perry stops scanning and looks down at you. "Well bless your heart," she says.
+
+
+@ask-mrs-p-2
+view-if: parishioners > 0
+
+It takes some care to get your question across. "There are a lot more people who are interested in the Rapture at other churches, I think."
+
+Mrs. Perry's gaze glitters. "To be honest, around here it's hard to find the kind of church I'm used to. But I'm sure there's a reason the good Lord put me here. Sometimes it's better to be the voice crying in the wilderness. John the Baptist. Don't you think?"
+
+Mrs. Perry definitely has not forgotten what happened to John the Baptist.
+
+- @baptist-yes: Say yes, doubtfully.
+- @perry-yes: Say I'm glad she's here.
+
+@baptist-yes
+on-arrival: status -= 1
+
+"You'll understand when you're older." Mrs. Perry's glance flickers to your parents. "Probably."
+
+
+@perry-yes
+on-arrival: status += 2
+
+"I'm glad you're here, anyway."
+
+"Aren't you sweet?" Mrs. Perry scans you as though looking for some hitherto-unrevealed source of sweetness. 

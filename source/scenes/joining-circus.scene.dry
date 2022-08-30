@@ -1,38 +1,52 @@
-title: Running Away
-subtitle: You've had enough of your parents.
+title: Joining the Circus
+subtitle: You don't see enough of the world.
 new-page: yes
-view-if: parents > 7 and month < 24
+view-if: world > 6 and age > 7 and month < 24
 frequency: 1000
 priority: 2
 on-arrival: month = 30; parents += 1
 tags: menace, top
 
-= Running Away
+= Joining the Circus
 
-The only question is where, and to whom. You can't just run off onto the streets; you know that much.
+You can't, of course, join an actual circus. But maybe you could get away from all this? Perhaps someone out there could help you go somewhere else?
 
 - @go-mrs-p: Go to Mrs. Perry.
 - @go-mrs-b: Go to Mrs. Barron.
 - @go-sara: Go to Sara.
+- @go-mrs-p-2: Ask Mrs. Perry to help you find a way to influence more people.
 
 
 @go-mrs-p
+view-if: status < 4
 
-"As far as I can see," Mrs. Perry says, when you've explained the situation, "your parents haven't done anything wrong, except maybe not to instill enough sense of discipline into you. You've had the opportunity to work hard and serve God through your gift of spelling."
+"As far as I can see," Mrs. Perry says, when you've explained the situation, "your parents have given you a chance to earn that freedom. If you win the Nationals, you'll get to travel."
 
-"*Other* kids get to go out more," you say. "*Other* kids don't have to do as many chores."
+"Not for very long."
 
-"And so they don't know whether they can." Mrs. Perry leans forward. "My dear, your parents are *exceptional* people. They are generous, charitable, dutiful. They have chosen a life with many difficulties because they are far too strong to walk on the flat. Do you understand?"
+"Well, no. But we have to walk before we can run. I moved across the country several times when I was a young adult, to accompany my husband. You might have the chance to do that as well, one day.
 
-"No."
+Getting a husband with a traveling job is not a life plan you'd ever considered, as such. You are considering whether to say so, when Mother's car pulls up outside.
 
-She sighs. Then she says, "In your life, you'll be much happier if you tally up what you were able to give, rather than what you received."
+"You called her?" you demand.
+
+Mrs. Perry tilts her head. "Of course, dear. She needed to know where you were."
+
+
+@go-mrs-p-2
+view-if: status > 3
+
+"As far as I can see," Mrs. Perry says, when you've explained the situation, "your parents have given you a chance to earn that freedom. If you win the Nationals, you'll get to travel."
+
+"Not for very long."
+
+"Well, no." Mrs. Perry tilts her head at you. "There are some things we could consider for you after that. For instance, if you won the nationals and then got a very early entrance to college, what would that say about home learning? It's something to consider."
 
 Mother's car pulls up outside.
 
 "You called her?" you demand.
 
-Mrs. Perry tilts her head. "Of course, dear. She needed to know where you were."
+Mrs. Perry tilts her head. "Of course, dear. She needed to know where you were. But don't worry, we'll speak again soon. Your parents are good people, but they don't have the same gift for communication that some of us do. But you and I together, my dear – we could craft your life into an exceptional story."
 
 
 @go-mrs-b

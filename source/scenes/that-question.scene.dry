@@ -4,7 +4,7 @@ new-page: yes
 view-if: age > 7 and month < 24
 on-arrival: month += 1
 tags: menace, top
-frequency: 500
+frequency: 200
 go-to: first-possible-chunk; second-possible-chunk; third-possible-chunk
 
 = That Question

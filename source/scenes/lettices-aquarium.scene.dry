@@ -3,7 +3,7 @@ subtitle: Encouraging Lettice in a project.
 new-page: yes
 view-if: age > 7 and lettice < 5 and month < 24 and aquarium < 4
 on-arrival: month += 1; lettice -= 1;
-frequency: 200
+frequency: 400
 tags: menace, top
 
 = Lettice's Aquarium

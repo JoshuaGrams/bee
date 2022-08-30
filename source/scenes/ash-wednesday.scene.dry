@@ -26,7 +26,7 @@ After the service, Mother and Father have you sit down and write down your lists
 
 
 @status-less
-view-if: status > 4 and age > 9
+view-if: status > 2 and age > 9
 on-arrival: status -= 2
 
 This is not a topic on which Mother and Father necessarily lead by example. Nonetheless, you have a suspicion there's something in it.
@@ -47,7 +47,7 @@ You resolve to ask for nothing for yourself. You already ask for few gifts or tr
 
 
 @gripe-less
-view-if: parents > 4
+view-if: parents > 2
 on-arrival: parents -= 2
 
 Honor thy father and mother, especially through the clipping of coupons and folding of clothes.

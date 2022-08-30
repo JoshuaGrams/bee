@@ -14,6 +14,7 @@ In the early, filtered light, when you are doing your spelling and no one else i
 - @sound: how solid the sounds are
 - @mankind: how they are the dust of lost peoples (that you will never meet)
 - @no-one: no one else would have these thoughts
+- @no-one-2: not even mother and father
 
 
 @sound
@@ -40,3 +41,9 @@ No one else would have these thoughts.
 And if you went to public school, would you even have the time or the inclination for them? Would the ideas join up in your head in all these jumping, unpredictable ways? A word from biology here, a bit of Greek history there, fizzing all the time like a shaken Coke?
 
 Or would you sit squeezed in a too-small desk in a classroom, learning lessons from which all mystery had been excised? 
+
+
+@no-one-2
+on-arrival: world -= 2; parents += 2
+
+The words furnish a memory palace, a labyrinth of syllabic similarity: ether and eon, biltong and billabong, liquefy and minuscule. It's a solitary place, and no one else lives there. Mother and Father brought you to the door and drove away.

@@ -77,7 +77,7 @@ It's a good thing no one can hear what goes on in your head.
 
 
 @peaceful
-view-if: parents = 0
+view-if: parents < 1
 
 You are very still inside and out. The candles all around you show just a bit of each parishioner's face. The familiar characters seem smoothed out and gentle.
 

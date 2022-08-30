@@ -3,7 +3,7 @@ subtitle: Spelling bees aren't just about spelling.
 new-page: yes
 view-if: age > 7 and spelling > 2 and month < 24
 on-arrival: month += 1; spelling += 1; perry += 1
-frequency: 40
+frequency: 400
 tags: drill, top
 
 = Performance Practice

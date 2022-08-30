@@ -13,7 +13,6 @@ You go to church at least once a week, obviously, and often more than that durin
 - @liturgy: Your favorite thing is the flowers and stained glass.
 - @on-the-other: What's more, it's very familiar.
 - @still: Still, sometimes services get very boring.
-- @people-diverse: The parishioners are very diverse, though.
 
 
 @still
@@ -94,49 +93,6 @@ Father glances at you in the rearview mirror. "That's an excellent question," he
 "When Mrs. Fundt was a girl," Mother says, "It was the rule that ladies had to wear a hat to church, so she is still used to it. Now that she is retired, she might not be able to afford a new hat."
 
 After church, everyone does research together on the internet. You find a list of idioms to do with clothing. Lettice laughs at the phrase "birthday suit." No one says anything else about how you yawned during the sermon.
-
-
-@people-diverse
-
-Your parents go to a very mixed church. For instance, Mrs. Perry goes there, and the Perry family believes strongly in the end of days. Mrs. Perry asks Father Sudwell about the Rapture a little more often than he would prefer.
-
-On the other hand, sometimes you find cars in the parking lot with stickers for Democratic candidates. A couple of the younger parishioners occasionally have colored streaks in their hair, or too many ear-piercings.
-
-- @ask-mother: Ask Mother her opinion about this.
-- @ask-father: Ask Father his opinion.
-- @ask-mrs-p: Ask Mrs. Perry about the girl with the triple-pierced ears.
-
-
-@ask-mother
-on-arrival: status -= 1
-
-You ask Mother why it is that so many different kinds of people come to church, some of whom don't seem to believe everything you do.
-
-"When you go to the communion rail, everyone is as important as everyone else," she says. 
-
-"Even if they have funny breath?" asks Lettice. "Like Mr. Fundt?"
-
-"In Christ there is no east or west," says Mother. "Nor any halitosis."
-
-
-@ask-father
-
-"It's good to be exposed to a variety of opinions," Father says; which is not the line he takes when you and Lettice ask to take an overly grown-up book out of the library. "That way, you can learn to defend your own views against them. It's best to learn how to argue civilly with people who are mostly on your same side, at church, before you need to go out and practice those skills more broadly in a more secular environment."
-
-
-@ask-mrs-p
-on-arrival: status += 1
-view-if: status > 0
-
-You stand near Mrs. Perry one day during coffee-and-donuts time.
-
-"There was a girl in the pew ahead of me who had *three* piercings in each ear," you tell Mrs. Perry. 
-
-"Really?" says Mrs. Perry. She wipes her mouth with her little coffee napkin and starts scanning the room.
-
-"I prayed for her secretly during the Prayers of the People," you add.
-
-Mrs. Perry stops scanning and looks down at you. "Well bless your heart," she says.
 
 
 @must-be

@@ -16,6 +16,27 @@ It's time for the competition again. Mother packs up her sewing necessities. Let
 - @go-4: Let's go.
 
 
+@go-2
+view-if: highest-win = 1
+go-to: district
+
+You've got the hang of the local competition now. It gives you hardly any trouble at all.
+
+@go-3
+view-if: highest-win = 2
+go-to: regional
+
+You move through the local and district competitions with the ease of practice. The other students recognize you. "Repeat winner," one of the boys explains to his mother. The pronouncer at district is the same woman as last year. She still has a little mustache. It has if anything grown darker.
+
+@go-4
+view-if: highest-win = 3
+go-to: national-challenge
+
+The round of Bees is the same as usual, and you find yourself back at Nationals. Taking the written exam. Drinking soda from the vending machine at the hotel. Looking around Washington, D.C. with an air of worldly knowledge. Sliding through semi-finals despite a bad moment or two.
+
+And then back on stage again.
+
+
 @toppeng
 choose-if: spelling < 25
 on-arrival: age += 1; month = 1
@@ -26,6 +47,10 @@ unavailable-subtitle: That doesn't seem right.
 You have, it turns out, one P too many. 
 
 "It seemed about right," says Mother in the car. "I suppose Indonesian loan words didn't come up on your study lists. I know *I*'ve never heard of it before."
+
+- @one-year-left: You have one year of eligibility left for Nationals.
+- @one-year-no: But you don't want to go round again.
+- @out-of-time: And this was your last chance.
 
 
 @win
@@ -50,57 +75,12 @@ Nationals! You and Mother receive airline tickets. Father is too busy at work to
 And then it's time for your debut on stage. And you get through the written exam and the semi-finals and in the finals it's down to
 
 
-@narsussistic
-choose-if: spelling < 12
-on-arrival: age += 1; month = 1; status += 1; parents += 1
-unavailable-subtitle: That just looks wrong.
-
-"NARSUSSISTIC."
-
-The bell rings almost before you're done speaking. You take your seat. 
-
-"Yes," hisses Mother into your ear. "From the well-known cartoon character Narsuss."
-
-You look at her blankly.
-
-"We *had* this in your mythology reading!" she says. "Honestly, I don't know why we bother if you're not going to pay attention. I bet Mrs. Perry will have noticed that, too."
-
-
-@the-end
-on-arrival: month = 27
-
-You ding out and someone else wins the top place and the $30,000. And after that the world is sort of on mute, quiet, hard to see and hear. You get some accolades as the second-place winner, but they are far away, dim. 
-
-
-
-@narsissistic
-choose-if: spelling < 15
-on-arrival: parents += 1; status += 1; month += 1; age += 1
-unavailable-subtitle: No, it definitely starts with NARC-.
-
-"NARSISSISTIC."
-
-Ah. No. The bell rings. 
-
-There are looks of compassion from a couple of the other kids, but this is not very soothing.
-
-"I had hoped," says Father over dinner, "that we'd have an opportunity to put a little congratulatory notice to you in our newsletter this month."
-
-
 @x3
 on-arrival: highest-win = 3
 go-to: national
 
 yes there it is. In something like a fugue state, you have won regional. It doesn't feel right, does it? But you've won, you're going on
 
-
-@narcissistic
-on-arrival: highest-win = 1
-go-to: district
-
-"NARCISSISTIC." Like the flowers, narcissus. Like the beautiful boy loved by Echo. Like a forest pool.
-
-"Don't let it go to your head," warns Father when you get home. "You're signed up for district, and regional if you get past that."
 
 
 @district
@@ -119,6 +99,11 @@ unavailable-subtitle: That doesn't seem right either.
 No. You're missing one copy of the letter S. Pity.
 
 
+- @one-year-left: You have one year of eligibility left for Nationals.
+- @one-year-no: But you don't want to go round again.
+- @out-of-time: And this was your last chance.
+
+
 @toping
 choose-if: topeng-defined < 1 or spelling < 17
 on-arrival: parents += 1; status += 1; month = 1; age += 1
@@ -127,6 +112,10 @@ unavailable-subtitle: TOPING is to do with drinking, not dance dramas.
 "TOPING."
 
 The misspelling bell dings. Mother looks harassed. "Did you," she asks awfully, "have to pick a word for imbibing alcohol? I am fairly certain our friends will find matter for comment in that."
+
+- @one-year-left: You have one year of eligibility left for Nationals.
+- @one-year-no: But you don't want to go round again.
+- @out-of-time: And this was your last chance.
 
 
 @lose-1
@@ -139,6 +128,11 @@ unavailable-subtitle: No, you don't think so.
 This turns out to be wrong. 
 
 "I didn't even know that word," says Mother afterwards. "I've never heard of it before today. Never seen it on a list, never... yeah. Nothing. Ever."
+
+
+- @one-year-left: You have one year of eligibility left for Nationals.
+- @one-year-no: But you don't want to go round again.
+- @out-of-time: And this was your last chance.
 
 
 @national-challenge
@@ -181,6 +175,10 @@ This turns out to be wrong.
 
 But on pressure she admits she doesn't know the word it was supposed to be, either. So there.
 
+- @one-year-left: You have one year of eligibility left for Nationals.
+- @one-year-no: But you don't want to go round again.
+- @out-of-time: And this was your last chance.
+
 
 @regional
 go-to: regional-challenge
@@ -188,6 +186,54 @@ go-to: regional-challenge
 The competitors at regional don't talk to each other so much, and have a kind of ferocious determination about them. And then. The stage. It's... your word is...
 
 Yes. Your mind has gone blanker than a blank sheet.
+
+
+
+@narsussistic
+choose-if: spelling < 12
+on-arrival: age += 1; month = 1; status += 1; parents += 1
+unavailable-subtitle: That just looks wrong.
+
+"NARSUSSISTIC."
+
+The bell rings almost before you're done speaking. You take your seat. 
+
+"Yes," hisses Mother into your ear. "From the well-known cartoon character Narsuss."
+
+You look at her blankly.
+
+"We *had* this in your mythology reading!" she says. "Honestly, I don't know why we bother if you're not going to pay attention. I bet Mrs. Perry will have noticed that, too."
+
+- @one-year-left: You have one year of eligibility left for Nationals.
+- @one-year-no: But you don't want to go round again.
+- @out-of-time: And this was your last chance.
+
+
+@narsissistic
+choose-if: spelling < 15
+on-arrival: parents += 1; status += 1; month += 1; age += 1
+unavailable-subtitle: No, it definitely starts with NARC-.
+
+"NARSISSISTIC."
+
+Ah. No. The bell rings. 
+
+There are looks of compassion from a couple of the other kids, but this is not very soothing.
+
+"I had hoped," says Father over dinner, "that we'd have an opportunity to put a little congratulatory notice to you in our newsletter this month."
+
+- @one-year-left: You have one year of eligibility left for Nationals.
+- @one-year-no: But you don't want to go round again.
+- @out-of-time: And this was your last chance.
+
+
+@narcissistic
+on-arrival: highest-win = 1
+go-to: district
+
+"NARCISSISTIC." Like the flowers, narcissus. Like the beautiful boy loved by Echo. Like a forest pool.
+
+"Don't let it go to your head," warns Father when you get home. "You're signed up for district, and regional if you get past that."
 
 
 @narcessistic
@@ -201,6 +247,10 @@ You get dinged.
 
 "That felt really close," you say, getting into the car. Mother gives you a tiny shrug. Another year that you're not going anywhere near Nationals. Not even as far as district.
 
+- @one-year-left: You have one year of eligibility left for Nationals.
+- @one-year-no: But you don't want to go round again.
+- @out-of-time: And this was your last chance.
+
 
 @x2
 choose-if: spelling < 35
@@ -211,14 +261,9 @@ The pronouncer seems to take a certain amount of active pleasure in dinging you 
 
 But then, it was just a word that you didn't recognize, not at all. And no amount of definition and use in a sentence and etymology made it any more familiar.
 
-
-@go-4
-view-if: highest-win = 3
-go-to: national-challenge
-
-The round of Bees is the same as usual, and you find yourself back at Nationals. Taking the written exam. Drinking soda from the vending machine at the hotel. Looking around Washington, D.C. with an air of worldly knowledge. Sliding through semi-finals despite a bad moment or two.
-
-And then back on stage again.
+- @one-year-left: You have one year of eligibility left for Nationals.
+- @one-year-no: But you don't want to go round again.
+- @out-of-time: And this was your last chance.
 
 
 @shadow
@@ -234,19 +279,9 @@ unavailable-subtitle: ...Probably not. Almost certainly not.
 
 Ding. Ding ding. Ding. You got it wrong. Whatever it was. There's a sort of dizzying buzzing about your head. What was that word?
 
-
-@go-3
-view-if: highest-win = 2
-go-to: regional
-
-You move through the local and district competitions with the ease of practice. The other students recognize you. "Repeat winner," one of the boys explains to his mother. The pronouncer at district is the same woman as last year. She still has a little mustache. It has if anything grown darker.
-
-
-@go-2
-view-if: highest-win = 1
-go-to: district
-
-You've got the hang of the local competition now. It gives you hardly any trouble at all.
+- @one-year-left: You have one year of eligibility left for Nationals.
+- @one-year-no: But you don't want to go round again.
+- @out-of-time: And this was your last chance.
 
 
 @request-n
@@ -311,5 +346,39 @@ unavailable-subtitle: Or that.
 "PUZSTA."
 
 It turns out you have the Z and the S backwards. That's it. That's all. The other way around and you could have been the national spelling champion of the entire United States, with $30,000 in prize money and newspaper articles written about you. But you didn't.
+
+- @one-year-left: You have one year of eligibility left for Nationals.
+- @one-year-no: But you don't want to go round again.
+- @out-of-time: And this was your last chance.
+
+
+@the-end
+on-arrival: month = 27
+
+You ding out and someone else wins the top place and the $30,000. And after that the world is sort of on mute, quiet, hard to see and hear. You get some accolades as the second-place winner, but they are far away, dim. 
+
+
+@one-year-left
+view-if: age = 10
+
+You have one more year before you're too old to compete. One year, still, to claim the trophy.
+
+
+@one-year-no
+view-if: age = 10
+on-arrival: month = 31
+
+That doesn't mean you have to come back. Maybe you've had enough. Maybe it's time to be done.
+
+Your parents are quiet when you come home. It's only in the after days that they start to bring out phrases like 'wasted opportunity' and 'not applying yourself'.
+
+@out-of-time
+view-if: age > 10
+on-arrival: month = 31
+
+You're too old to come back next year. You've used up all your chances.
+
+Your parents are quiet when you come home. It's only in the after days that they start to bring out phrases like 'wasted opportunity' and 'not applying yourself'.
+
 
 

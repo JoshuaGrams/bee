@@ -18,6 +18,7 @@ The carpet is very close to your nose. Like everything. The thought that comes i
 - @everyone: Everyone has odd half-asleep thoughts. It's nothing.
 - @text: Text Jerome.
 - @text-2: Text Jerome.
+- @parents-fault: You'd be less bored if your parents let you out. Ever.
 - @romance: You'd be less bored if you had a boyfriend.
 - @nationals: If you go to Nationals, you'll get to make a trip cross-country.
 
@@ -76,15 +77,23 @@ Jerome: figures
 Jerome: time for breakfast ttyl
 
 
+@parents-fault
+on-arrival: world -= 2; parents += 2
+
+You know the standard answers about socialization and child development. You know that you see people at church and field trips and the co-op. You know that you have more meaningful interactions with adults, officially, than most young people your age.
+
+You know that you are waiting.
+
+
 @romance
-view-if: age > 9
+view-if: age > 10
 on-arrival: world += 2; parents += 1
 
 Your parents would never permit you to date at your age. Obviously. But having someone to talk things over with, someone who would reliably be around to chat with you online and maybe even text you on a regular basis — that would make things feel less solitary, wouldn't it?
 
 
 @everyone
-on-arrival: world += 1
+on-arrival: world -= 1
 
 Like a dream of falling that wakes you in a panic.
 
@@ -94,7 +103,7 @@ For now. You'll get out. Eventually. It has to get better.
 
 
 @nationals
-on-arrival: spelling-relief += 1; world -= 1; motivation = 2
+on-arrival: spelling-relief += 1; world -= 2; motivation = 2
 
 You could go to Washington, D.C. You could see the important buildings. Father would come along, and he would have a lot to say about the politics, and about how you were in the worst school district in the country, about the district as a locus of failure and folly and wrong.
 

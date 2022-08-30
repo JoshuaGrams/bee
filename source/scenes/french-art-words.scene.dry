@@ -4,7 +4,7 @@ new-page: yes
 view-if: age > 7 and spelling > 1 and month < 24 and art-words < 4
 on-arrival: month += 1; spelling += 2
 tags: drill, top
-frequency: 400
+frequency: 500
 
 = French Art Words
 

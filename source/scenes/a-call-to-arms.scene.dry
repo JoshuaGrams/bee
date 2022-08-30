@@ -2,7 +2,7 @@ title: A Call to Arms
 subtitle: Taking action with the legislature.
 new-page: yes
 view-if: status > 1 and month < 24
-frequency: 100
+frequency: 300
 tags: menace, plot, top
 on-arrival: perry += 1
 

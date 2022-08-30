@@ -1,7 +1,7 @@
 title: Church Jumble Sale
 subtitle: Helping sort goods for the annual fundraiser.
 new-page: yes
-view-if: status > 1 and month = 14
+view-if: month = 14
 frequency: 1000
 on-arrival: month += 1
 tags: menace, plot, top
@@ -116,6 +116,7 @@ She laughs. "My! That certainly is a bit vintage. I doubt most mothers would car
 
 
 @fountainhead
+view-if: world > 2
 
 You open the paperback of *The Fountainhead* to the point where the spine creases from much previous reading. It falls open to a bit where someone is... yes, that must be meant to be a description of sex. Or a prelude to it.
 

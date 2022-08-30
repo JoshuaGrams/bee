@@ -1,0 +1,47 @@
+title: Epilogue
+new-page: true
+frequency: 1000
+priority: 1
+view-if: month = 31
+on-arrival: epilogued = 1
+tags: top
+subtitle: Down the corridor of years.
+
+= Epilogue
+
+So you go back home and start the process of living with this failure. Some days it's worse than other days. In the end...
+
+- @too-soon: You gave up too easily. You should have tried harder, done more.
+- @too-late: You spent too long chasing something you were never going to get.
+- @status-fail: You were supposed to prove something about the status of home-schoolers. And you didn't.
+- @mystic: The competition wasn't the point.
+
+
+@too-soon
+
+Who can say how else it might have come out? What level you might have reached, if you'd been more dedicated.
+
+
+@too-late
+
+Who can say how else it might have come out? What other things you might have done with that part of your childhood?
+
+
+@status-fail
+view-if: status > 4
+
+Mrs. Perry is starting work on a new crop of potentials already. She works on new candidates every year.
+
+"That's how we win in the end," she says to your mother. "Be persistent long enough to get our prodigy."
+
+Mother meets your eye. You can't read whether she's upset for herself or for you, or only thinking of her shopping list.
+
+
+@mystic
+view-if: spelling-relief > 4
+
+'Thesaurus' means treasure-house, and that's what you have: a store of knowledge all of your own, a huge and echoing habitation of the mind. 
+
+And when the world is too hot, too cold, too dull, you can choose to be elsewhere. Afloat in the euphotic zones of the ocean, or hardened and resistant in a sclerophyll forest. (Deciduous, coniferous, mangrove, playa and campo, tundra and fen...)
+
+Inward is a direction. Away is a direction.
