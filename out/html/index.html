@@ -21,6 +21,36 @@
             <table>
                 <tr>
                     <td>
+                        <label for="transcript_checkbox">Enable transcript</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" id="transcript_checkbox" name="transcript" value="1" onclick="window.enableTranscript();">
+                    </td>
+                </tr>
+                <tr>
+                    <td> <hr> </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="backgrounds_yes">Enable backgrounds</label>
+                    </td>
+                    <td>
+                        <input type="radio" id="backgrounds_yes" name="backgrounds" value="1" onclick="window.enableBg();">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="backgrounds_no">Disable backgrounds</label>
+                    </td>
+                    <td>
+                        <input type="radio" id="backgrounds_no" name="backgrounds" value="0" onclick="window.disableBg();">
+                    </td>
+                </tr>
+                <tr>
+                    <td> <hr> </td>
+                </tr>
+                <tr>
+                    <td>
                         <label for="animate_yes">Enable animation</label>
                     </td>
                     <td>
@@ -37,6 +67,22 @@
                 </tr>
                 <tr>
                     <td> <hr> </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="animate_bg_yes">Enable background animation</label>
+                    </td>
+                    <td>
+                        <input type="radio" id="animate_bg_yes" name="animate_bg" value="1" onclick="window.enableAnimateBg();">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="animate_bg_no">Disable background animation</label>
+                    </td>
+                    <td>
+                        <input type="radio" id="animate_bg_no" name="animate_bg" value="0" onclick="window.disableAnimateBg();">
+                    </td>
                 </tr>
                 <tr>
                     <td>
@@ -148,8 +194,8 @@
                 <a id="help-link" onclick="window.showHelp();" href="#">Help</a>
               <!-- Uncomment to show the top bar. If not using stats or save files, comment out those lines.
                 <a onclick="window.showSaveSlots();" href="#">Save/Load</a>
-                <a onclick="window.showOptions();" href="#">Options</a>
               -->
+                <a onclick="window.showOptions();" href="#">Options</a>
               </div>
             </header>
             <div id="tools_wrapper">
@@ -166,7 +212,7 @@
                 <a onclick="window.showSaveSlots();" href="#">Save/Load</a>
                 <a onclick="window.quickSave();" href="#">Quick Save</a>
                 <a onclick="window.quickLoad();" href="#">Quick Load</a>
-                <a onclick="window.saveTranscript();" href="#">Save Transcript</a>
+                <a onclick="window.saveTranscript();" href="#" class="save-transcript" style="display: none;">Save Transcript</a>
               </p>
               <!--
               &copy; 2021 Emily Short.
